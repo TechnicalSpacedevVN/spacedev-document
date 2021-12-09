@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring exercise</title>
+    <style>
+      .box {
+        padding: 50px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      .flex {
+        display: flex;
+        gap: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex">
+      <h1>Destructuring exercise</h1>
+    </div>
+    <script>
+      "strict mode";
+
+      /*
+      1. dùng array destructuring đế lấy dữ liệu từ array và hiển thị các phần tử
+      */
+
+      let values = [1, "a", { b: 3 }, 4];
+
+      let first = values[0];
+
+      let third = values[2];
+
+      console.log(`first :>>`, first);
+      console.log("third :>> ", third);
+      //   first :>> 1
+      //   third :>> {b: 3}
+
+      console.log("/*------------------------------*/");
+
+      /*
+      2. dùng object destructuring đế lấy dữ liệu và hiển thị tên đầy đủ của profile
+      */
+
+      let profileA = {
+        fname: "CFD",
+
+        lname: "Circle",
+
+        age: 1,
+      };
+
+      let fname = profileA.fname;
+
+      let lname = profileA.lname;
+
+      console.log('name :>> ', fname, lname); //CFD Circle
+
+      console.log("/*------------------------------*/");
+      /*
+      3. dùng object destructuring đế lấy dữ liệu và link website của profile
+      */
+
+      let profileB = {
+        fname: "CFD",
+
+        lname: "Circle",
+
+        social: {
+          website: "https://www.cfdtraining.vn/",
+          facebook: "https://www.facebook.com/cfdcircle",
+        },
+      };
+
+      let website = profileB.social.website;
+
+      console.log('website :>> ', website); // website :>> https://www.cfdtraining.vn/
+    </script>
+  </body>
+</html>

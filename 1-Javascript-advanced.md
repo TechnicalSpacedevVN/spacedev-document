@@ -348,3 +348,7 @@
 
 2. Làm chức năng tăng giảm số lượng sản phẩm\, có 2 box, mõi box có nút tăng/giảm số lượng. Box 2 có thêm các nút tăng 10, tăng 20, giãm 10, giãm 20\
 --> Xem demo và bài giải ở `Baitap/ngay1/ngay1_currying.html`
+
+3. Làm theo đề bài ở file `Baitap/ngay1/ngay1_array.html`
+4. Làm theo đề bài ở file `Baitap/ngay1/ngay1_destructuring.html`
+5. Làm theo đề bài ở file `Baitap/ngay1/ngay1_object.html`
