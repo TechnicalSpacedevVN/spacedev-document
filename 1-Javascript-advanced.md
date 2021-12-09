@@ -7,6 +7,7 @@
     - const: hằng số không thể thay đổi
     - var, let: Biến có thể thay đổi
     - function: Function cũng là biến
+
     ```javascript
         const funcA = function() { }
         function func() { }
@@ -19,6 +20,7 @@
 - Const không thể khai báo lại
 - Scope nằm trong cặp ngoặc `{ }` gần nhất
 - Khi const giữ giá trị object. Object có thể thay đổi giá trị bên trong nó nhưng không thể thay đổi bằng 1 object khác (Không khuyến khích). vd: 
+
     ```javascript
     const obj = {
         a: 1,
@@ -35,6 +37,7 @@
 - Var có thể khai báo lại
 - Có thể thay đổi giá trị trong quá trình thực thi
 - Scope nằm trong cặp ngoặc function hoặc class, nếu var đc khai báo trong cặp `{ }` của if hoặc `( )` của for vd:
+
     ```javascript
     if (true) {
         var a = 1
@@ -66,6 +69,7 @@
 ## Destructuring
 
 - Destructuring là một cú pháp cho phép bạn gán các thuộc tính của một Object hoặc một Array. Điều này có thể làm giảm đáng kể các dòng mã cần thiết để thao tác dữ liệu trong các cấu trúc này. Có hai loại Destructuring: Destructuring Objects và Destructuring Arrays.
+
 ```javascript
     // Object
     let obj = {
@@ -85,6 +89,7 @@
     let [a, b, c, d, , , g] = arr
 ```
 - Có thể dùng destructuring khi nhận giá trị trả về từ 1 function là Object hoặc Array 
+
 ```javascript
     // Object
     function funcA() {
@@ -106,6 +111,7 @@
     const [a, b, c, d, , , g] = funcB()
 ```
 - Hoặc có thể từ tham số truyền vào 1 function
+
 ```javascript
     // Object
     function funcA({ a, b, c }) {
@@ -139,11 +145,13 @@
 ```
 
     --> Khi chúng ta truyền nhiều tham số vào hàm max (không  giới hạn), thì hàm max sẽ for qua tất cả các giá trị và tìm số lớn nhất 
+    
     --> Nhưng khi chúng ta có 1 array và muốn truyền vào hàm max, chúng ta không thể truyền nguyên 1 array mà phải dùng Spread để truyền vào, spread sẽ tự động gắn các item của array vào từng tham số của hàm
 
 - Ngoài chức năng như mình đã kể ở trên, spread operator còn có rất nhiều các chức năng hữu dụng khác giúp code của chúng ta ngắn gọn và dễ nhìn hơn rất nhiều, có thể kể đến như :
 
     - Sao chép một mảng
+
     ```javascript
         const arr1 = [1, 2, 3, 4, 5]
 
@@ -158,6 +166,7 @@
         const arr3 = [...arr1, 6, ...arr2] // Tạo ra 1 bản copy từ arr1, arr2
     ```
     - Sử dụng mảng như danh sách các argument
+
     ```javascript
         // Spread
         Math.max(...[1,3,5]) // output: 5
@@ -170,12 +179,14 @@
         const arr2 = [...arr1, 6] 
     ```
     - Thao tác với state trong React
+
     ```javascript
         const state = { a: 1, b: 2, c: 3 }
 
         const { a, ...another } = state 
     ```
     - Kết hợp các objects
+
     ```javascript
         const state1 = { a: 1, b: 2, c: 3 }
         const state2 = { a: 4, d: 5, e: 6 }
@@ -192,10 +203,12 @@
         */
     ```
     - Chuyển NodeList thành một array
+
     ```javascript
         const list = [...document.getElementByClassName('.abc')]
     ```
     - Biến 1 string thành array (split)
+
     ```javascript
         [...["😋😛😜🤪😝"]] 
         // Array [ "😋😛😜🤪😝" ]
@@ -203,6 +216,7 @@
         // Array(9) [ "🙂", "🙃", "😉", "😊", "😇", "🥰", "😍", "🤩", "!" ]
     ```
 ## Rest (gôm 1 array, object vào)
+
 ```javascript
     // Rest
     const funcA = (a, b, ...params) => {
@@ -216,13 +230,18 @@
     funcA(...arr)
 ```
 - Nhìn chung Rest cũng giống Spread, nhưng nó là quá trình ngược lại, gôm những giá trị không được khai báo vào 1 biến. Được sử dụng trong tham số trong function
+
 - Rest sử dụng được cho cả arrow function và function
+
 - Rest parameter phải được đặt cuối của tham số
 
 ## Closure
 - **Closure** (tạm dịch: bao đóng) cho phép lập trình viên Javascript viết mã tốt hơn. 
+
 - Trước khi làm quen với closure, bạn nên hiểu rõ về scope của 1 biến: const, var, let
+
 - Closure là một hàm được tạo ra từ bên trong một hàm khác, hàm bên trong có thể sử dụng các biến của hàm bao ngoài nó. Có thể trả về hàm bên trong đó ra ngoài trong trường hợp cần thiết
+
 ```javascript
     function a() {
         var name = "I'm a Copy";
@@ -239,7 +258,9 @@
     }
 ```
 - Hàm bên trong không chỉ truy cập được các biến bên ngoài, mà còn sử dụng được các biến khi sử dụng truyền vào
+
 - Closure có thể truy cập biến bên ngoài, ngay cả khi hàm bên ngoài đã được trả về
+
 - Closure lưu tham chiếu đến biến của hàm bên ngoài:
 ```javascript
     function celebrityID () {
@@ -264,7 +285,9 @@
 - Closure giúp quản lý code hiệu quả và ngắn gọn hơn, tăng khả năng sử dụng lại code
 ## Currying 
 - Currying là 1 function trả về 1 function, trong function đó lại trả tiếp 1 function khác (thường là 3 function liên tiếp, khác closure)
+
 - Có thể kết hợp cả closure và curring trong cùng 1 function
+
 - Ví dụ ta có 1 hàm discount giãm 10% giá trị
 ```javascript
     const discount = () => {

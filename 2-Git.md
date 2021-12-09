@@ -18,7 +18,9 @@ _ Ngoài ra các yêu cầu trong dự án thường thay đổi thường xuyê
 ---------
 # 2. Cài đặt git
 - **Bước 1** : Cài đặt phần mềm git : https://git-scm.com/downloads
+
 - **Bước 2** : Cài đặt thông tin cá nhân
+
   - `git config --global user.name "Nguyen Van A"`
   - `git config --global user.email "nguyenvana@gmail.com"`
 
@@ -27,18 +29,17 @@ _ Ngoài ra các yêu cầu trong dự án thường thay đổi thường xuyê
 
 --------
 # 3. Cách Git hoạt động
-<br />
-_ Nếu chúng ta muốn bắt đầu sử dụng Git, chúng ta cần biết nơi lưu trữ các repository của mình. (Repository là nơi lưu trữ code). Có 2 loại Repo là Local repo (code trên máy tính đang sử dụng) và Remote repo (Code lưu trữ trực tuyến trên internet)
-<br />
-<br />
-_ Có nhiều nơi trực tuyến dùng để lưu trữ code vd: Github, Gitlab, BitBucket,...
-<br />
-<br />
-_ Khi làm việc, lập trình viên sẽ làm việc trên Local Repo của mỗi người. Và sau khi code xong 1 chức năng nào đó, họ sẽ push code lên Remote Repo để các lập trình viên khác có thể pull về.
-<br />
-<br />
+
+- Nếu chúng ta muốn bắt đầu sử dụng Git, chúng ta cần biết nơi lưu trữ các repository của mình. (Repository là nơi lưu trữ code). Có 2 loại Repo là Local repo (code trên máy tính đang sử dụng) và Remote repo (Code lưu trữ trực tuyến trên internet)
+
+
+- Có nhiều nơi trực tuyến dùng để lưu trữ code vd: Github, Gitlab, BitBucket,...
+
+- Khi làm việc, lập trình viên sẽ làm việc trên Local Repo của mỗi người. Và sau khi code xong 1 chức năng nào đó, họ sẽ push code lên Remote Repo để các lập trình viên khác có thể pull về.
+
+
 * Push: Đẩy code từ máy cá nhân lên Remote Repo.
-<br />
+
 * Pull: Lấy code từ Remote repo xuống máy cá nhân.
 <br />
 <br />
@@ -54,6 +55,7 @@ Truy cập link và tạo 1 Repository để lưu trữ code dự án: https://g
 
 ## 2. Cài đặt git cho code local: 
 Truy cập vào folder dự án, chạy lệnh `git init`\
+
 --> Tạo Local Repo trên dự án, một tập tin ẩn `.git` sẽ được thêm vào mã nguồn của code. Kể từ lúc này, mọi thay đổi trên  code sẽ được theo dỗi và ghi vào tập folder `.git`
 
 
@@ -62,6 +64,7 @@ Truy cập vào folder dự án, chạy lệnh `git init`\
 
 ## 3. Thêm Remote Repo cho dự án: 
 `git remote add [repo-name] [link-repo]`\
+
 --> Khi làm việc nhóm, và code được lưu trữ trên internet thông qua một Repo. Thì chúng ta phải thêm Repo đó vào dự án code hiện tại.\
 vd: `git remote add origin https://github.com/dangthuyenvuong/cfd-template`
 
@@ -73,11 +76,14 @@ vd: `git remote add origin https://github.com/dangthuyenvuong/cfd-template`
 
 ## 4. Commit code
 --> Khi code xong 1 chức năng nào đó, chúng ta có nhu cầu update sự thay đổi đó vào Local Repo:
+
 - **B1**: Kiểm tra trạng thái của những file có thay đổi: \
 `git status`
+
 - **B2**: Thêm tất cả những file có thay đổi vào hàng đợi: \
 `git add .`\
---> Trong trường hợp muốn thêm cụ thể 1 file nào đó: `git add [tên file]`\
+
+  --> Trong trường hợp muốn thêm cụ thể 1 file nào đó: `git add [tên file]`\
 - **B3**: Đưa code vào trong git: \
 `git commit -m "[comment]"`
 
