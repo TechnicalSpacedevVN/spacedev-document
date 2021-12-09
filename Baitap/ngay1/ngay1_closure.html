@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <style>
+        .box {
+            padding: 50px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .flex{
+            display: flex;
+            gap: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="box box1">
+            <h1 class="number">0</h1>
+            <button class="play">Play</button>
+            <button class="pause">Pause</button>
+            <button class="reset">Reset</button>
+        </div>
+        <div class="box box2">
+            <h1 class="number">0</h1>
+            <button class="play">Play</button>
+            <button class="pause">Pause</button>
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+    <script>
+        'strict mode'
+
+        const countdown = (element, initNum = 10) => {
+            let num = initNum
+            let timer
+
+            const object = {
+                play: () => {
+                    clearInterval(timer)
+                    timer = setInterval(() => {
+                        --num
+                        if (num === 0) {
+                            clearInterval(timer)
+                        }
+                        element.innerText = num
+                    }, 1000)
+                },
+                pause: () => {
+                    clearInterval(timer)
+                },
+                reset() {
+                    num = initNum
+                    object.play()
+                },
+
+            }
+
+            return object
+        }
+
+
+        const count1 = countdown(document.querySelector('.box1 .number'))
+        document.querySelector('.box1 .play').addEventListener('click', count1.play)
+        document.querySelector('.box1 .pause').addEventListener('click', count1.pause)
+        document.querySelector('.box1 .reset').addEventListener('click', count1.reset)
+
+        const count2 = countdown(document.querySelector('.box2 .number'), 100)
+        document.querySelector('.box2 .play').addEventListener('click', count2.play)
+        document.querySelector('.box2 .pause').addEventListener('click', count2.pause)
+        document.querySelector('.box2 .reset').addEventListener('click', count2.reset)
+    </script>
+</body>
+
+</html>

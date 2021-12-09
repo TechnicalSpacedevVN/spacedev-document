@@ -145,7 +145,7 @@
 ```
 
     --> Khi chúng ta truyền nhiều tham số vào hàm max (không  giới hạn), thì hàm max sẽ for qua tất cả các giá trị và tìm số lớn nhất 
-    
+
     --> Nhưng khi chúng ta có 1 array và muốn truyền vào hàm max, chúng ta không thể truyền nguyên 1 array mà phải dùng Spread để truyền vào, spread sẽ tự động gắn các item của array vào từng tham số của hàm
 
 - Ngoài chức năng như mình đã kể ở trên, spread operator còn có rất nhiều các chức năng hữu dụng khác giúp code của chúng ta ngắn gọn và dễ nhìn hơn rất nhiều, có thể kể đến như :
@@ -328,7 +328,7 @@
     const str = `Hello ${name}!` // Hello Đặng Thuyền Vương
 ```
 
-## Shallow copying và Deep copying 
+<!-- ## Shallow copying và Deep copying 
 
 ## IIFE (Immediately Invoked Function Expression)
 
@@ -338,4 +338,13 @@
 
 ## Thao tác với Object
 
-## Thao tác với string
+## Thao tác với string -->
+
+
+# Bài tập
+
+1. Làm chức năng countdown cho đồng hồ đếm ngược, có 2 đồng hồ trên cùng 1 giao diện, sử dụng closure\
+--> Xem demo và bài giải ở `Baitap/ngay1/ngay1_closure.html`
+
+2. Làm chức năng tăng giảm số lượng sản phẩm\, có 2 box, mõi box có nút tăng/giảm số lượng. Box 2 có thêm các nút tăng 10, tăng 20, giãm 10, giãm 20\
+--> Xem demo và bài giải ở `Baitap/ngay1/ngay1_closure.html`

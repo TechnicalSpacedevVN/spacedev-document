@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <style>
+        .box {
+            padding: 50px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .flex{
+            display: flex;
+            gap: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="box box1">
+            <button class="decrement">Giảm</button>
+            <h1 class="number">10</h1>
+            <button class="increment">Tăng</button>
+        </div>
+        <div class="box box2">
+            <button class="decrement">Giảm</button>
+            <button class="decrement10">Giảm 10</button>
+            <button class="decrement20">Giảm 20</button>
+            <h1 class="number">100</h1>
+            <button class="increment">Tăng</button>
+            <button class="increment10">Tăng 10</button>
+            <button class="increment20">Tăng 20</button>
+        </div>
+    </div>
+    <script>
+        'strict mode'
+
+        const updateQuantity = (soluong) => (num) => (ev) => {
+            soluong += num
+            ev.currentTarget.parentNode.querySelector('.number').innerText = soluong
+        }
+
+        const quantity1 = updateQuantity(10)
+        
+        document.querySelector('.box1 .increment').addEventListener('click', quantity1(1))
+        document.querySelector('.box1 .decrement').addEventListener('click', quantity1(-1))
+
+
+        const quantity2 = updateQuantity(100)
+
+        document.querySelector('.box2 .increment').addEventListener('click', quantity2(1))
+        document.querySelector('.box2 .increment10').addEventListener('click', quantity2(10))
+        document.querySelector('.box2 .increment20').addEventListener('click', quantity2(20))
+
+        document.querySelector('.box2 .decrement').addEventListener('click', quantity2(-1))
+        document.querySelector('.box2 .decrement10').addEventListener('click', quantity2(-10))
+        document.querySelector('.box2 .decrement20').addEventListener('click', quantity2(-20))
+
+
+        
+    </script>
+</body>
+
+</html>
