@@ -344,11 +344,11 @@
 # Bài tập
 
 1. Làm chức năng countdown cho đồng hồ đếm ngược, có 2 đồng hồ trên cùng 1 giao diện, sử dụng closure\
---> Xem demo và bài giải ở `Baitap/ngay1/ngay1_closure.html`
+--> Xem demo và bài giải ở [Baitap/ngay1/ngay1_closure.html](https://github.com/dangthuyenvuong/CFD-React-Document/blob/master/Baitap/ngay1/ngay1_closure.html)
 
 2. Làm chức năng tăng giảm số lượng sản phẩm\, có 2 box, mõi box có nút tăng/giảm số lượng. Box 2 có thêm các nút tăng 10, tăng 20, giãm 10, giãm 20\
---> Xem demo và bài giải ở `Baitap/ngay1/ngay1_currying.html`
+--> Xem demo và bài giải ở [Baitap/ngay1/ngay1_currying.html](https://github.com/dangthuyenvuong/CFD-React-Document/blob/master/Baitap/ngay1/ngay1_currying.html)
 
-3. Làm theo đề bài ở file `Baitap/ngay1/ngay1_array.html`
-4. Làm theo đề bài ở file `Baitap/ngay1/ngay1_destructuring.html`
-5. Làm theo đề bài ở file `Baitap/ngay1/ngay1_object.html`
+3. Làm theo đề bài ở file [Baitap/ngay1/ngay1_array.html](https://github.com/dangthuyenvuong/CFD-React-Document/blob/master/Baitap/ngay1/ngay1_array.html)
+4. Làm theo đề bài ở file [Baitap/ngay1/ngay1_destructuring.html](https://github.com/dangthuyenvuong/CFD-React-Document/blob/master/Baitap/ngay1/ngay1_destructuring.html)
+5. Làm theo đề bài ở file [Baitap/ngay1/ngay1_object.html](https://github.com/dangthuyenvuong/CFD-React-Document/blob/master/Baitap/ngay1/ngay1_object.html)
