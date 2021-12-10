@@ -160,7 +160,7 @@
 
     - varable.scss -> chứa tất cả các biến dùng chung
 
-    - mixin.scss -> chứa tất các mixin
+    - mixin.scss -> chứa tất cả các mixin
 
     - style.scss -> nơi import 2 file vừa tạo
 
