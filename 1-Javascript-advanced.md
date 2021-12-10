@@ -380,11 +380,11 @@
     // obj.a.a1 = 1 
 ```
 ## Promise, async/await
-- Promise là 1 object đặc biệt, 1 object Promise sẽ luôn luôn có `then` và `cache`
+- Promise là 1 object đặc biệt, 1 object Promise sẽ luôn luôn có `then` và `catch`
 
 - Then xẩy ra khi gọi hàm `resolve`
 
-- Cache xẩy ra khi gọi hàm `reject`
+- catch xẩy ra khi gọi hàm `reject`
 
 - Dùng Promise để khử `callback hell` trong trường hợp cần thiết
 

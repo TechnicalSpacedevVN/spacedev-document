@@ -3,12 +3,10 @@
 
 # Attribute trong React
 - Attribute sẽ được đặt tên theo quy tắc `camelCased` vd: onClick, onKeyPress, className
--
 
 # Style trong React
 
-- Có 4 loại style trong Reactjs là: Inline styling  JavaScript Object, CSS Stylesheet, CSS Modules
-
+- Có 4 loại style trong Reactjs là:
 
 ## 1. Inline styling
 
@@ -101,8 +99,8 @@
     const Accordion = ({ title, children }) => {
         return (
             <divn className="accordion">
-                <h3 className="title" style={styles.title}>{title}</h3>
-                <div className="content" style={styles.content}>{children}</div>
+                <h3 classNames={styles.title}>{title}</h3>
+                <div classNames={styles.content}>{children}</div>
             </divn>
         )
     }
@@ -152,3 +150,18 @@
 # Tổng kết:
 
 - Tất cả những phương pháp trên đều có những ưu điểm và nhược điểm, vì vậy hãy suy nghĩ, tính toán trước về độ phức tạp của ứng dụng cũng như sở thích của bạn để chọn ra phương pháp hợp lý và hiệu quả nhất.
+
+
+# Sử dụng scss để code dự án
+- Cài đặt thư viện node-sass@4.14.1 ở dev
+> yarn add -D node-sass@4.14.1
+
+- Tạo những file sau vào folder `assets/css`
+
+    - varable.scss -> chứa tất cả các biến dùng chung
+
+    - mixin.scss -> chứa tất các mixin
+
+    - style.scss -> nơi import 2 file vừa tạo
+
+---> Tất cả các style riêng của component đều phải import `assets/css/style.scss` để sử dụng mixin và biến dùng chung

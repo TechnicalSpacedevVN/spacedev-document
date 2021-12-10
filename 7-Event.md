@@ -19,6 +19,8 @@
         | onMouseOut   | Khi chuột ra khỏi element        |
         | onContextMenu   | Khi bấm chuột phải        |
 
+    <br>
+    
     - ### **Nhóm key**
 
         | Tên event         | Giải thích |
@@ -26,6 +28,8 @@
         | onKeyDown         | Khi nhấn key        |
         | onKeyUp       | Khi nhấn và nhả key      |
         | onKeyPress       | Khi nhấn key        |
+
+    <br>
 
     - ### **Nhóm form, input**
 
@@ -35,6 +39,7 @@
         | onSubmit       | Khi submit form      |
         | onBlur       | Khi mất focus        |
         | onChange       | Khi thay đổi giá trị        |
+    <br>
 
     - ### **Nhóm drag event**
 
@@ -47,6 +52,7 @@
         | onDragOver       | Khi drag và di chuyển vào element     |
         | onDragStart       | Khi bắt đầu drag       |
         | onDrop       | Khi drop element       |
+    <br>
 
 # Cách bắt sự kiện trong React
 
