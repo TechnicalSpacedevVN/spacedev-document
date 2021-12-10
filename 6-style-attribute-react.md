@@ -153,8 +153,8 @@
 
 
 # Sử dụng scss để code dự án
-- Cài đặt thư viện node-sass@4.14.1 ở dev
-> yarn add -D node-sass@4.14.1
+- Cài đặt thư viện `sass` ở dev
+> yarn add -D sass
 
 - Tạo những file sau vào folder `assets/css`
 
