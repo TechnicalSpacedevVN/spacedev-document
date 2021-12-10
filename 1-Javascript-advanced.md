@@ -328,17 +328,235 @@
     const str = `Hello ${name}!` // Hello Đặng Thuyền Vương
 ```
 
-<!-- ## Shallow copying và Deep copying 
+## Shallow copying và Deep copying 
+- Shallow copying: (Copy cạn)
+
+    - Tạo 1 bản copy của object hoặc array
+
+    - Các reference trong object vẫn được giữ nguyên. Các con trỏ vùng nhớ vẫn đang trỏ cùng 1 địa chỉ vùng nhớ
+    
+    - Khi thay đổi 1 giá trị trên bản dữ liệu, giá trị của biến kia vẫn được thay đổi theo
+
+    - Thường sử dụng cho setState của React
+
+
+```javascript
+    const obj = {
+        a: {
+            a1: 1,
+            a2: 2,
+            a3: 3
+        }
+    }
+
+    let obj2 = {...obj}
+
+    obj2.a.a1 = 100 
+    // obj.a.a1 = 100 
+```
+
+- Deep copying: (Copy xâu)
+
+    - Tạo ra 1 bản copy hoàn toàn mới
+    
+    - Các object sẽ không còn reference với nhau. Con trỏ vùng nhớ đang trỏ trên 2 vùng nhớ khác nhau
+
+    - Khi thay đổi giá trị trên 1 bản dữ liệu, giá trị của biến kia không thay đổi theo
+
+    - Thường sử dụng cho việc copy hoàn toàn 1 object
+
+```javascript
+    const obj = {
+        a: {
+            a1: 1,
+            a2: 2,
+            a3: 3
+        }
+    }
+
+    let obj2 = JSON.parse(JSON.stringify(obj))
+
+    obj2.a.a1 = 100 
+    // obj.a.a1 = 1 
+```
+## Promise, async/await
+- Promise là 1 object đặc biệt, 1 object Promise sẽ luôn luôn có `then` và `cache`
+
+- Then xẩy ra khi gọi hàm `resolve`
+
+- Cache xẩy ra khi gọi hàm `reject`
+
+- Dùng Promise để khử `callback hell` trong trường hợp cần thiết
+
+- Giá trị nhận được trong `then/catch` sẽ tùy thuộc vào giá trị khi ta `resolve/reject`
+
+```javascript
+
+    const delay = (callback, timmer = 1000) => {
+        setTimeout(callback, timmer)
+    }
+
+    delay(() => {
+        console.log(1)
+        delay(() => {
+            console.log(2)
+            delay(() => {
+                console.log(3)
+            })
+        })
+    })
+
+    // Promise
+
+    const delay = (timmer = 1000) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve()
+            }, timmer)
+        })
+    }
+
+    delay()
+    .then(() => {
+        console.log(1)
+        return delay()
+    })
+    .then(() => {
+        console.log(2)
+        return delay()
+    })
+    .then(() => {
+        console.log(3)
+    })
+    .catch(() => {
+
+    })
+
+
+    delay()
+    .then(() => {
+        console.log(1)
+        return 1111111111
+    })
+    .then((res) => {
+        console.log(res)
+        return 22222222
+    })
+    .then((res) => {
+        console.log(res)
+    })
+    .catch(() => {
+
+    })
+
+
+    const fetchApi = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve({ data: 234234234 })
+                // reject({ data: 234234234 })
+            }, timmer)
+        })
+    }
+
+    fetchApi()
+    .then((res) => {
+        console.log(res) // { data: 234234234 }
+    })
+    .catch((error) => {
+        console.log(error) // { data: 234234234 }
+    })
+
+```
+- `async/await` là cú pháp để run Promise giống như code bình thường
+
+- Code trong function có sử dụng `await` bắt buộc phải khai báo function `async`
+
+- Khi function được khai báo `async` mặc định function đó là function `return` về `Promise`
+
+```javascript
+    async function run(){}
+
+    const run = async () => {
+        console.log(1)
+        await delay()
+        console.log(2)
+        await delay()
+        console.log(3)
+        throw {error: '.....'}
+    }
+
+    run()
+    .then(res => {
+        console.log('end')
+    }).catch(err => console.log(err))
+
+
+    try{
+        await run()
+    }catch(err){
+        console.log('error', err)
+    }
+```
 
 ## IIFE (Immediately Invoked Function Expression)
 
+    - Một hàm được khơi tạo không tên và thực thi ngay tại thời điểm khởi tạo
 
+    - Được dùng giới hạn scope của 1 biến trong trường hợp quá nhiều biến trùng tên
+
+    - Thường sử dụng khi muốn gọi hàm async/await nhưng lại không có function bao ngoài
+
+    - Khi gọi async/await trong useEffect React
+
+```javascript
+    (() => {
+
+    })()
+
+    ((number) => {
+
+    })(100)
+
+    (async () => {
+        await ....
+    })()
+```
 # Thao tác xử lý logic với các bài toán thông dụng
 ## Thao tác với Array
+- Các hàm thao tác với Array:
+    - find
+    - findIndex
+    - filter
+    - map
+    - forEach
+    - push
+    - pop
+    - shift
+    - unshift
+    - some
+    - every
+    - sort
+    - concat
+    - reduce
+- Các thao tác:
+    - Thêm cuối, lây cuối, thêm đầu, lấy đầu
+    - filter những item theo điều kiện nào đó
+    - Tìm object với điều kiện
+    - Tìm index của object với điều kiện
+    - Kiểm tra tất cả item trong mảng có đúng điều kiện
+    - Check xem có bất kỳ 1 item nào có giá trị như mong muốn
+    - Tính tổng trên mảng
+
 
 ## Thao tác với Object
-
-## Thao tác với string -->
+- Các thao tác với Object
+    - Từ `object` sang `string`
+    - Từ `string` sang `object`
+    - Shallow copy
+    - Deep copy
+    - Shallow copy và update 1 attribute
+    - Deep copy và update 1 attribute
 
 
 # Bài tập
