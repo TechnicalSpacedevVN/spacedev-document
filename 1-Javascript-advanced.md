@@ -328,6 +328,31 @@
     const str = `Hello ${name}!` // Hello Đặng Thuyền Vương
 ```
 
+
+## Optional chaining (?.)
+
+- Kiểm tra giá trị của 1 biến trước khi sử dụng
+
+- Thường được dùng cho object, array, function
+
+- Không thể dùng `?.` cho phép gán
+
+- Mặc định giá trị khi attribute đó không tồn tại là `undefined`
+
+```javascript
+    const obj = { a: 1 }
+
+    console.log(obj?.a) // 1
+    console.log(obj?.b?.c?.d) // undefined
+    console.log(obj?.b?.()) // undefined
+    console.log(obj?.a?.()) // Error: a không phải là function
+
+    const arr = [1,2]
+
+    console.log(arr?.[0]) // 1
+    console.log(arr?.[10]?.a?.b) // undefined
+```
+
 ## Shallow copying và Deep copying 
 - Shallow copying: (Copy cạn)
 
