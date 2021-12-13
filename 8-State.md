@@ -19,7 +19,7 @@ const Accordion = ({ title, children }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const handleTitleClick = () => {
-		setIsOpen(!setIsOpen);
+		setIsOpen(!isOpen);
 	};
 
 	return (
@@ -55,7 +55,13 @@ const Accordion = ({ title, children }) => {
 
 # Bài tập
 
-1. Tạo component Accordion
-2. Tạo component Tab
-3. Tạo component Menu
+1. Tạo component Button
+	- Color: bright, colored, simple, stroke
+	- Size: Small, medium, large
+	- Type: default, icon left, icon right
+2. Tạo component Accordion
+![!](./img/Accordion_01-min.webp)
+3. Tạo component Tab
+![!](./img/tab-ui.png)
 4. Tạo component Input
+![!](./img/input-ui.png)

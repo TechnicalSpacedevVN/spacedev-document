@@ -103,7 +103,7 @@ useEffect(() => {
 }, [count]);
 ```
 
-### Cách 3: `callback` có trả về `function`
+### Cách 4: `callback` có trả về `function`
 
 - Thường dùng để dọn dẹp khi component được hủy hoặc chạy trước mõi lần `callback` tiếp theo được chạy
 
