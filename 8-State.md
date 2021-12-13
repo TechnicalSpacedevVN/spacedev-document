@@ -8,6 +8,12 @@
 
 - Khi thay đổi state sử dụng `setState` của state đó, component sẽ được `re-render` lại, và logic sẽ được thực thi lại. Không init lại giá trị của state, lúc này state sẽ giữ giá trị mới --> update giao diện
 
+- State không được khai báo trong hoặc sau câu điều kiện `if` hoặc trong `for`, `while`
+
+- Nên đưa khai báo state lên đầu mõi component
+
+- `useState` không được dùng ở ngoài component
+
 
 ```jsx
     const Accordion = ({ title, children }) => {
