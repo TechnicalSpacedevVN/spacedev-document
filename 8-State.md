@@ -2,61 +2,60 @@
 
 # State là gì?
 
-- `State` là trạng thái của 1 component. Mỗi component sẽ có quyền có state (`statefull component`) hoặc không có (`stateless component`), tùy thuộc vào mục đích của component
+- `State` là trạng thái của 1 component. Mỗi component sẽ có thể có state (`Stateful Component`) hoặc không có (`Stateless Component`), tùy thuộc vào mục đích của component.
 
-- State có thể thay đổi trong quá trình thực thi (component được render)
+- State có thể thay đổi trong quá trình thực thi (component được render).
 
-- Khi thay đổi state sử dụng `setState` của state đó, component sẽ được `re-render` lại, và logic sẽ được thực thi lại. Không init lại giá trị của state, lúc này state sẽ giữ giá trị mới --> update giao diện
+- Khi thay đổi state bằng cách sử dụng `setState` của state đó, component sẽ được `re-render` lại, và logic sẽ được thực thi lại. Không khởi tạo lại giá trị của state, lúc này state sẽ giữ giá trị mới --> update giao diện.
 
-- State không được khai báo trong hoặc sau câu điều kiện `if` hoặc trong `for`, `while`
+- State không được khai báo trong hoặc sau câu điều kiện `if` hoặc trong vòng lặp (`for`, `while`, ...)
 
-- Nên đưa khai báo state lên đầu mõi component
+- Nên đưa khai báo state lên đầu mỗi component
 
 - `useState` không được dùng ở ngoài component
 
-
 ```jsx
-    const Accordion = ({ title, children }) => {
-        
-        const [isOpen, setIsOpen] = useState(false)
+const Accordion = ({ title, children }) => {
+	const [isOpen, setIsOpen] = useState(false);
 
-        const handleTitleClick = () => {
-            setIsOpen(!setIsOpen)
-        }
+	const handleTitleClick = () => {
+		setIsOpen(!setIsOpen);
+	};
 
-        return (
-            <divn className={`accordion ${isOpen ? 'open' : 'hide'}`}>
-                <h3 className="title" onClick={handleTitleClick}>{title}</h3>
-                <div className="content">{children}</div>
-            </divn>
-        )
-    }
+	return (
+		<div className={`accordion ${isOpen ? "open" : "hide"}`}>
+			<h3 className="title" onClick={handleTitleClick}>
+				{title}
+			</h3>
+			<div className="content">{children}</div>
+		</div>
+	);
+};
 ```
 
 ---> Khi bất kỳ `setState` nào của component được gọi, component sẽ `re-render` (thực thi lại logic trong component). Và các quá trình `initState` sẽ không được thực hiện lại, lúc này state sẽ mang giá trị mới và react sẽ render ra giao diện với state mới
 
-
 # Sự khác nhau giữa state và props
 
-- **Props**: 
+- **Props**:
 
-    - Không thể thay đổi trong quá trình thực thi
-    
-    - Được truyền từ component cha xuống con
+  - Không thể thay đổi trong quá trình thực thi
 
-    - Chỉ được thay đổi khi component cha re-render lại và truyền xuống 1 props mới
+  - Được truyền từ component cha xuống component con
 
-- **State**: 
+  - Chỉ được thay đổi khi component cha `re-render` lại và truyền xuống 1 props mới
 
-    - Có thể thay đổi trong quá trình thực thi
-    
-    - Được khởi tạo trong chính component đó
+- **State**:
 
-    - Mõi lần `setState` thay đổi giá trị, chính bản thân component đó sẽ được re-render lại (thực thi lại logic trong component) và giá trị sẽ mang giá trị mới
+  - Có thể thay đổi trong quá trình thực thi
+
+  - Được khởi tạo trong chính component đó
+
+  - Mỗi lần `setState` lại (thay đổi giá trị của state), chính bản thân component đó sẽ được re-render lại (thực thi lại logic trong component) và state sẽ mang giá trị mới
 
 # Bài tập
 
 1. Tạo component Accordion
 2. Tạo component Tab
 3. Tạo component Menu
-3. Tạo component Input
+4. Tạo component Input
