@@ -190,3 +190,22 @@
 - Bắt sự kiên DOM bằng javascript thuần, hủy sự kiện trong function return
 
 - Lắng nghe sự thay đổi của 1 biến mõi lần re-render
+
+
+# Bài tập
+
+## Hướng dẫn làm bài tập:
+
+1. Gọi API (giả) khi vào component và set lại vào state
+
+2. Bắt sự kiên scroll khi vào 1 component nào đó, hủy khi hủy component
+
+3. Thay đổi title khi click tăng biến count
+
+# Về nhà
+
+- Thay đổi title khi vào trang
+
+- Cắt các component Menu top, Search, header
+
+- Category, Product Card

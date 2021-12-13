@@ -56,10 +56,6 @@
 
 # Bài tập
 
-- Hướng dẫn làm bài tập
-- Yêu cầu giao diện trong mõi bài tập, tìm UI cho mõi bài tập
-- Chuẩn bị sẳn data nếu cần thiết
-
 1. Tạo component Accordion
 2. Tạo component Tab
 3. Tạo component Menu
