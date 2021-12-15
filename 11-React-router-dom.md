@@ -14,7 +14,7 @@
 
 - Bước 2: Những page sẽ nằm trong 1 `Route`
 
-- Bước 3: Những tag `a` sẽ thay bằng component `Link`
+- Bước 3: Những tag `a` sẽ thay bằng component `Link`, `NavLink`
 
 - Bước 4: Sử dụng `Routes` để chọn 1 page duy nhất được render
 
@@ -180,7 +180,7 @@
     |\
     Checkout\
     |\
-    Checkout Success
+    Checkout Success\
     |\
     Login\
     |\
@@ -197,7 +197,7 @@
     |    |_Payment\
     |    |_Payment detail\
     |    |_Address\
-    |    |_Address detail\
+    |    |_Address detail
 
 ## Về nhà
 
