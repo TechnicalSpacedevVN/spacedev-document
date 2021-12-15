@@ -68,11 +68,37 @@
 
 # Ngày 4
 
+
 | Nội dung | Thời gian
 |----------|-----------
-| Render có điều kiện | 10 phút
-| Render Listing | 30 phút
-| Thao tác với prop children trong React | 30 phút
+|react-router-dom| 1 tiếng 30 phút
+
+## Trên lớp
+
+- Thực hành chia trang demo, đầy đủ các trang home, product, filter, detail, 404, login, redirect, authen
+
+- Làm chức năng Tab nhưng có router
+
+- Làm query URL trên paginate
+
+## Về nhà
+
+- Chia router cho dự án
+
+- Chia trang login
+
+- Viết trang profile
+
+- Làm Paginate
+
+# Ngày 5
+
+
+| Nội dung | Thời gian
+|----------|-----------
+| Paginate | 10 phút
+| Menu | 30 phút
+| Select | 30 phút
 
 ## Trên lớp
 
@@ -86,24 +112,8 @@
 
 - Làm Header, Menu, Filter
 
-# Ngày 5
 
-| Nội dung | Thời gian
-|----------|-----------
-|react-router-dom| 1 tiếng 30 phút
-
-## Trên lớp
-
-- Thực hành chia trang demo, đầy đủ các trang home, product, filter, detail, 404, login, redirect, authen
-
-## Về nhà
-
-- Chia router cho dự án
-
-- Chia trang login
-
-- Viết trang profile
-# Ngày 5
+# Ngày 6
 
 |Nội dung | Thời gian
 |----------|-----------
@@ -118,7 +128,7 @@
 
 - Validate cho form checkout
 
-# Ngày 6
+# Ngày 7
 
 |Nội dung | Thời gian
 |----------|-----------
@@ -137,7 +147,7 @@
 
 - Làm slider trên trang home
 
-# Ngày 7
+# Ngày 8
 
 |Nội dung | Thời gian
 |----------|-----------
@@ -158,40 +168,40 @@
 
 - Get thông tin user khi login thành công
 
-# Ngày 8
+# Ngày 9
 
 |Nội dung | Thời gian
 |----------|-----------
 | REST API | 30 phút
 | Giới thiệu custom hook useQuery | 1 tiếng
 
-# Ngày 9
+# Ngày 10
 
 |Nội dung | Thời gian
 |----------|-----------
 | Filter sản phẩm | 1 tiếng 30 phút
 
-# Ngày 10
+# Ngày 11
 
 |Nội dung | Thời gian
 |----------|-----------
 | Làm phân trang | 1 tiếng 
 
-# Ngày 11
+# Ngày 12
 
 | Nội dung | Thời gian
 |----------|-----------
 | Context API | 30 phút
 | Redux | 1 tiếng 30 phút
 
-# Ngày 12
+# Ngày 13
 
 | Nội dung | Thời gian
 |----------|-----------
 | Redux Thunk | 30 phút
 | Redux saga | 45 phút
 
-# Ngày 13
+# Ngày 14
 
 | Nội dung | Thời gian
 |----------|-----------
@@ -200,13 +210,13 @@
 | Portal | 10 phút
 | Làm popup cart | 15 phút
 
-# Ngày 14
+# Ngày 15
 
 | Nội dung | Thời gian
 |----------|-----------
 | Hướng dẫn làm trang checkout | 1 tiếng
 
-# Ngày 15
+# Ngày 16
 
 | Nội dung | Thời gian
 |----------|-----------
@@ -215,13 +225,13 @@
 | Login get cart | 15 phút
 
 
-# Ngày 16
+# Ngày 17
 
 | Nội dung | Thời gian
 |----------|-----------
 | React.lazy | 30 phút
 | Skeleton | 30 phút
-# Ngày 17
+# Ngày 18
 
 | Nội dung | Thời gian
 |----------|-----------
@@ -229,7 +239,7 @@
 | useCallback | 30 phút
 | React.memo | 10 phút
 
-# Ngày 18
+# Ngày 19
 
 | Nội dung | Thời gian
 |----------|-----------

@@ -14,6 +14,8 @@
 
 - `useState` không được dùng ở ngoài component
 
+- Hàm `setState` sẽ kiểm tra giá trị truyền vào, nếu giá trị khác thì component sẽ được `re-render` và ngược lại
+
 ```jsx
 const Accordion = ({ title, children }) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -57,11 +59,31 @@ const Accordion = ({ title, children }) => {
 
 1. Tạo component Button
 	- Color: bright, colored, simple, stroke
+
 	- Size: Small, medium, large
+
 	- Type: default, icon left, icon right
+
+    ![!](./img/button-ui.jpg)
+
 2. Tạo component Accordion
-![!](./img/Accordion_01-min.webp)
+
+    - Đóng mở content khi click vào title
+
+    - Có hiệu ứng ở icon arrow
+
+    ![!](./img/Accordion_01-min.webp)
+
 3. Tạo component Tab
-![!](./img/tab-ui.png)
-4. Tạo component Input
-![!](./img/input-ui.png)
+
+    - Chuyển nội dung khi qua tab khác
+
+    - Có trạng thái active dành cho title
+
+    ![!](./img/tab-ui.png)
+
+4. Tạo component Input, Select
+
+    - Input gồm nhiều size, icon left, right, label, placeholder
+
+    ![!](./img/input-ui.png)
