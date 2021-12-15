@@ -128,7 +128,7 @@ useEffect(() => {
 
 - Lifecyle là vòng đời của 1 component từ khi khởi tạo đến khi được hủy sẽ trải qua các quá trình (hàm): Khởi tạo (Mounting) - Thay đổi (Updating) - Hủy (Unmounting)
 
-![Vòng đời của component!](./img/Screen-Shot-2018-10-31-at-1.44.28-PM.png)
+![Vòng đời của component!](./img/lifecyle.png)
 
 (Ảnh minh họa)
 

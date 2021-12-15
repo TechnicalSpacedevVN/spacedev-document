@@ -10,28 +10,32 @@
 
 ## Cách sử dụng
 
-- Bước 1: Gắn Provider `App.js`
+- Bước 1: Gắn `BrowserRouter` vào `App.js`
 
 - Bước 2: Những page sẽ nằm trong 1 `Route`
 
 - Bước 3: Những tag `a` sẽ thay bằng component `Link`
 
-- Bước 4: Sử dụng `Switch` để chọn 1 page duy nhất được render
+- Bước 4: Sử dụng `Routes` để chọn 1 page duy nhất được render
+
+# Ví dụ tổng hợp
 
 ```jsx
-    import React from "react";
+    import { useState } from "react";
     import {
-        BrowserRouter as Router,
-        Switch,
+        BrowserRouter,
         Route,
-        Link,
+        Routes,
+        Navigate,
         useParams,
-        useRouteMatch
-    } from "react-router-dom";
+        Link,
+        Outlet,
+    } from 'react-router-dom'
+    import NotFound from './pages/notFound'
 
     export default function App() {
         return (
-            <Router>
+            <BrowserRouter>
                 <div>
                     <ul>
                         <li>
@@ -43,33 +47,35 @@
                         <li>
                             <Link to="/dashboard">Dashboard</Link>
                         </li>
+                        <li>
+                            <Link to="/profile">Profile</Link>
+                        </li>
+                        <li>
+                            <Link to="/32">URL Params</Link>
+                        </li>
+                        <li>
+                            <Link to="/topics ">Topics</Link>
+                        </li>
                     </ul>
                     <hr />
-                    <Switch>
-                        <Route exact path="/">
-                            <Home />
-                        </Route>
-                        <Route path="/about">
-                            <About />
-                        </Route>
-                        <Route path="/dashboard">
-                            <Dashboard />
-                        </Route>
-
-                        <Route path="/about">
-                            <Profile />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route element={<Layout />}>
+                            <Route path="/about" element={<About />} />
+                            <Route path="/dashboard" element={<Dashboard />} />
+                            <Route path="/profile" element={<Profile />} />
                         </Route>
 
                         {/* Router params */}
-                        <Route path="/:id" children={<Child />} />
+                        <Route path="/:id" element={<Child />} />
 
                         {/* Nesting routers */}
-                        <Route path="/topics">
-                            <Topics />
-                        </Route>
-                    </Switch>
+                        <Route path="/topics/*" element={<Topics />} />
+
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
                 </div>
-            </Router>
+            </BrowserRouter>
         );
     }
 
@@ -87,7 +93,7 @@
     function About() {
         return (
             <div>
-                <h2>About</h2>
+             <h2>About</h2>
             </div>
         );
     }
@@ -101,8 +107,8 @@
     }
 
     function Profile() {
-        const [login, setLogin] = useState(false)
-        if(!login) return <Redirect />
+        const [login, setLogin] = useState(true)
+        if (!login) return <Navigate to="/" />
         return (
             <div>
                 <h2>Profile</h2>
@@ -116,42 +122,85 @@
 
         return (
             <div>
-            <h3>ID: {id}</h3>
+                <h3>ID: {id}</h3>
             </div>
         );
+    }
+
+    function Layout() {
+        return <div>
+            <div>Header</div>
+                <Outlet />
+            <div>Footer</div>
+        </div>
     }
 
     function Topics() {
         // The `path` lets us build <Route> paths that are
         // relative to the parent route, while the `url` lets
         // us build relative links.
-        let { path, url } = useRouteMatch();
 
         return (
             <div>
-            <h2>Topics</h2>
-            <ul>
-                <li>
-                    <Link to={`${url}/rendering`}>Rendering with React</Link>
-                </li>
-                <li>
-                    <Link to={`${url}/components`}>Components</Link>
-                </li>
-                <li>
-                    <Link to={`${url}/props-v-state`}>Props v. State</Link>
-                </li>
-            </ul>
-
-            {/* child router */}
-            <Switch>
-                <Route exact path={path}>
-                    <h3>Please select a topic.</h3>
-                </Route>
-                <Route path={`${path}/:topicId`}>
-                    <Topic />
-                </Route>
-            </Switch>
+                <h2>Topics</h2>
+                <ul>
+                    <li>
+                        <Link to={`rendering`}>Rendering with React</Link>
+                    </li>
+                    <li>
+                        <Link to={`components`}>Components</Link>
+                    </li>
+                    <li>
+                        <Link to={`props-v-state`}>Props v. State</Link>
+                    </li>
+                </ul>
+                <Outlet />
+                {/* child router */}
+                <Routes>
+                    <Route index element={<h3>Please select a topic.</h3>} />
+                    <Route path={`:topicId`} element={<Topics />} />
+                </Routes>
             </div>
         );
     }
 ```
+
+
+## Trên lớp 
+
+- chia router theo site map sau:
+
+    Home \
+    |\
+    About \
+    |\
+    Contact US \
+    |\
+    View Cart\
+    |\
+    Checkout\
+    |\
+    Checkout Success
+    |\
+    Login\
+    |\
+    Register\
+    |\
+    Forgot password\
+    |\
+    Reset password\
+    |\
+    Profile\
+    |    |_My profile\
+    |    |_Order\
+    |    |_Order Detail\
+    |    |_Payment\
+    |    |_Payment detail\
+    |    |_Address\
+    |    |_Address detail\
+
+## Về nhà
+
+- Chia router cho các trang của dự án
+
+- Cắt và hoàn thành trang chủ
