@@ -103,16 +103,16 @@
                                 type="password"
                                 errorText={error.password}
                             />
-                            {/* <label>
+                            <label>
                                 <div className="label">Username</div>
                                 <input type="text" value={form.username} onChange={_onChange('username')} />
                                 <p className="error-text">{error.username}</p>
-                            </label> */}
-                            {/* <label>
+                            </label>
+                            <label>
                                 <div className="label">Password</div>
                                 <input type="password" value={form.password} onChange={_onChange('password')} />
                                 <p className="error-text">{error.password}</p>
-                            </label> */}
+                            </label>
                             <Button loading={isFetching}>Submit</Button>
                         </form>
                     </div>
