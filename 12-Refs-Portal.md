@@ -1,11 +1,11 @@
-# Refs trong Reactjs
+# Refs, Portal trong Reactjs
 # Ref là gì?
 
 - Ref là cách Component cha lấy component con để thao tác
 
-- Component con có thể là 1 thẻ DOM element hoặc component React
+- Dùng để lấy DOM Element mà không cần sử dụng javascript thuần
 
-# Cách sử dụng Ref
+- Component đặt ref có thể là 1 thẻ DOM element hoặc component React
 
 - Sử dụng hook `useRef` được import từ `react`
 
@@ -144,6 +144,7 @@
 # Portal
 
 - Portal là cách Component render ra HTML. Thông thường các component sẽ render ra HTML ở nơi mà nó được sử dụng. Có những Component bắt buộc phải được append vào con trực tiếp của body vd: Popup, tooltip, Modal,....
+
 - Chúng ta sử dụng `createPortal` của `ReactDOM` để render ra HTML ở nơi mình mong muốn
 
 ```jsx
