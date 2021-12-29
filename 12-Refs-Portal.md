@@ -55,8 +55,6 @@
 
 - Khi 1 Component được khai báo forward ref nhưng ko gắn cụ thể vào 1 Element nào hết thì giá trị `current` sẽ là `initValue`
 
-- Khi 1 Component không được khai báo forward ref nhưng lại gắn ref thì sẽ báo lỗi ở console và giá trị `current` sẽ là `initValue`
-
 
 ```jsx
     import { useRef, forwardRef } from "react"
