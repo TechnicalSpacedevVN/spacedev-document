@@ -185,14 +185,18 @@
 
 |Nội dung | Thời gian
 |----------|-----------
-| Làm phân trang | 1 tiếng 
+| Redux | 1 tiếng 
+| REST API | 30 phút
+| Giới thiệu custom hook useQuery | 1 tiếng
 
 # Ngày 12
 
 | Nội dung | Thời gian
 |----------|-----------
-| Context API | 30 phút
-| Redux | 1 tiếng 30 phút
+| Làm authen | 30 phút
+| Làm refresh Token | 30 phút
+| Lấy thông tin sản phẩm | 30 phút
+
 
 # Ngày 13
 
@@ -200,29 +204,35 @@
 |----------|-----------
 | Redux Thunk | 30 phút
 | Redux saga | 45 phút
+| Paginate | 15 phút
+| Breadcrumbs | 15 phút
+| Filter sản phẩm | 15 phút
+
 
 # Ngày 14
 
 | Nội dung | Thời gian
 |----------|-----------
-| Higher Order Component (HOC) | 30 phút
-| Ref | 30 phút
-| Portal | 10 phút
-| Làm popup cart | 15 phút
+| Làm chức năng cart | 30 phút
+| Login get profile | 15 phút
+| Login get cart | 15 phút
+| Logout clear cart | 15 phút
 
 # Ngày 15
 
 | Nội dung | Thời gian
 |----------|-----------
 | Hướng dẫn làm trang checkout | 1 tiếng
+| My order | 15 phút
+| My order detail | 15 phút
 
 # Ngày 16
 
 | Nội dung | Thời gian
 |----------|-----------
-| Hướng dẫn làm popup cart | 30 phút
-| Logout clear cart | 15 phút
-| Login get cart | 15 phút
+| Làm trang chủ | 30 phút
+| Làm trang chi tiết sản phẩm | 30 phút
+
 
 
 # Ngày 17
@@ -235,14 +245,10 @@
 
 | Nội dung | Thời gian
 |----------|-----------
-| useMemo | 30 phút
-| useCallback | 30 phút
+| useMemo | 10 phút
+| useCallback | 10 phút
 | React.memo | 10 phút
-
-# Ngày 19
-
-| Nội dung | Thời gian
-|----------|-----------
 | Giới thiệu cách làm CV xin việc | 30 phút
 | Các câu hỏi thường gặp khi phỏng vấn | 1 tiếng 30 phút
+
 
