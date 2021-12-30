@@ -185,9 +185,9 @@
 
 |Nội dung | Thời gian
 |----------|-----------
-| Redux | 1 tiếng 
-| REST API | 30 phút
-| Giới thiệu custom hook useQuery | 15 phút
+| Redux | 1 tiếng 30 phút 
+| REST API | 20 phút
+
 
 # Ngày 12
 
@@ -195,36 +195,44 @@
 |----------|-----------
 | Làm authen | 30 phút
 | Làm refresh Token | 30 phút
-| Lấy thông tin sản phẩm | 30 phút
+| Giới thiệu custom hook useQuery | 15 phút
+| Lấy thông tin sản phẩm | 15 phút
 
 
 # Ngày 13
 
 | Nội dung | Thời gian
 |----------|-----------
-| Redux Thunk | 30 phút
-| Redux saga | 45 phút
-| Paginate | 15 phút
-| Breadcrumbs | 15 phút
-| Filter sản phẩm | 15 phút
+| Redux saga | 30 phút
+| Làm chức năng cart | 30 phút
+| Login get profile | 10 phút
+| Login get cart | 10 phút
+| Logout clear cart | 10 phút
 
 
-# Ngày 14
+
+# Ngày 14 - Tối ưu
 
 | Nội dung | Thời gian
 |----------|-----------
-| Làm chức năng cart | 30 phút
-| Login get profile | 15 phút
-| Login get cart | 15 phút
-| Logout clear cart | 15 phút
+| useMemo | 10 phút
+| useCallback | 10 phút
+| React.memo | 10 phút
+| Paginate | 15 phút
+| Breadcrumbs | 15 phút
+| Filter sản phẩm | 15 phút
 
 # Ngày 15
 
 | Nội dung | Thời gian
 |----------|-----------
-| Hướng dẫn làm trang checkout | 1 tiếng
+| Hướng dẫn làm trang checkout | 30 phút
 | My order | 15 phút
 | My order detail | 15 phút
+| Thông tin cá nhân | 15 phút
+| Wishlist | 15 phút
+
+(code demo cho từng bài tập)
 
 # Ngày 16
 
@@ -232,7 +240,7 @@
 |----------|-----------
 | Làm trang chủ | 30 phút
 | Làm trang chi tiết sản phẩm | 30 phút
-
+| Review code | 30 phút
 
 
 # Ngày 17
@@ -241,13 +249,22 @@
 |----------|-----------
 | React.lazy | 30 phút
 | Skeleton | 30 phút
+| Review code | 30 phút
 # Ngày 18
+
 
 | Nội dung | Thời gian
 |----------|-----------
-| useMemo | 10 phút
-| useCallback | 10 phút
-| React.memo | 10 phút
+| routerConfig | 45 phút
+| Review code | 30 phút
+
+
+
+
+# Sharing
+
+| Nội dung | Thời gian
+|----------|-----------
 | Giới thiệu cách làm CV xin việc | 30 phút
 | Các câu hỏi thường gặp khi phỏng vấn | 1 tiếng 30 phút
 
