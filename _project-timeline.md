@@ -187,7 +187,7 @@
 |----------|-----------
 | Redux | 1 tiếng 
 | REST API | 30 phút
-| Giới thiệu custom hook useQuery | 1 tiếng
+| Giới thiệu custom hook useQuery | 15 phút
 
 # Ngày 12
 
