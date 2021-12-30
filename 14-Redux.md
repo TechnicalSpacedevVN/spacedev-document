@@ -37,8 +37,6 @@
 
 - 1 Action phải tuân theo quy tắc là 1 object chứa 1 key quan trọng là `type` và `payload` là dạng optional
 
-- 
-
 ## Store
 
 - Store là nơi lưu trữ state của Redux
