@@ -107,13 +107,13 @@
     export default authReducer
 ```
 
-- Bước 4: Gắn reducer vào store, sử dụng `combineReducer` để gọp nhiều reducer lại
+- Bước 4: Gắn reducer vào store, sử dụng `combineReducers` để gọp nhiều reducer lại
 ```jsx
     // store/index.js
-    import { createStore, combineReducer } from 'redux'
+    import { createStore, combineReducers } from 'redux'
     import authReducer from './authReducer.js'
 
-    const store = createStore(combineReducer({
+    const store = createStore(combineReducers({
         auth: authReducer
     }))
 
