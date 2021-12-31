@@ -28,9 +28,11 @@
 
 # Code demo
 
-- Lấy dữ liệu từ api
-
-
+- Lấy danh sách data từ api
+- Lấy 1 data cụ thể
+- Thêm data
+- Chỉnh sửa 1 data
+- Delete data
 
 # Bài tập
 
@@ -42,6 +44,8 @@
 
 - Delete post sử dụng DELETE
 
+
+Link api demo:
 
 https://61cedbf665c32600170c7dd9.mockapi.io/products
 
