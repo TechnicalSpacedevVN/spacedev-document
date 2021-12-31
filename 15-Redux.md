@@ -61,11 +61,120 @@
 
 # Cài đặt, code demo
 
+- Bước 1: Cài đặt thư viện redux, react-redux
+> <font size="5">`Yarn add redux react-redux`</font>
+
+- Bước 2: Tạo store redux từ `createStore`
+
+```jsx
+    // store/index.js
+    import { createStore } from 'redux'
+
+    const store = createStore()
+```
+- Bước 3: Tạo reducer cho từng chức năng
+
+```jsx
+    // store/authenReducer.js
+    const user = JSON.parse(localStorage.getItem('login'))
+    const initialState = {
+        login: !!user,
+        user
+    }
+
+    const authReducer = (state = initialState, action) => {
+        swtich(action.type){
+            case 'LOGIN':
+                localStorage.setItem('login', JSON.stringify(action.payload))
+
+                return {
+                    login: true,
+                    user: action.payload
+                }
+            case 'LOGOUT': 
+                localStorage.removeItem('login')
+                return {
+                    login: false,
+                    user: null
+                }
+            default:
+                return state
+        }
+    } 
+    
+    export default authReducer
+```
+
+- Bước 4: Gắn reducer vào store, sử dụng `combineReducer` để gọp nhiều reducer lại
+```jsx
+    // store/index.js
+    import { createStore, combineReducer } from 'redux'
+    import authReducer from './authReducer.js'
+
+    const store = createStore(combineReducer({
+        auth: authReducer
+    }))
+
+    export default store
+```
+
+- Bước 5: Cài đặt `store` vào trong `Provider` và gắn Provider vào app
+```jsx
+    // App.js
+    import store from './store'
+    const App = () => {
+        return (
+            <Provider store={store}>
+                <BrowserRouter>
+                    ...
+                </BrowserRouter>
+            </Provider>
+        )
+    }
+    
+    export default App
+```
+
+- Bước 6: Ở những nơi cần lấy state từ store, sử dụng `useSelector` để lấy ra state cần thiết, sử dụng `useDispatch` nếu muốn thực hiện 1 action vào trong `store`
+
+```jsx
+    // components/Header
+    import { useSelector, useDispatch } from 'react-redux'
+    import Button from 'components/Button'
+
+    const Header = () => {
+        const dispatch = useDispatch()
+        const { user } = useSelector(store => store.auth)
+
+        const logout = () => {
+            dispatch({
+                type: 'LOGOUT'
+            })
+        }
+
+        return (
+            <header>
+                <div className="account">
+                    <div className="username">{user.name}</div>
+                    <div className="avatar">
+                        <img src={user.avatar}/>
+                    </div>
+                </div>
+                <Button onClick={logout}>Logout</Button>
+            </header>
+        )
+    }
+
+    export default Header
+```
+
 # Những thường hợp thường sử dụng Redux
 
 - Khi cần lưu trữ state dùng cho nhiều component
 
 - Lưu trữ data, cache dữ liệu khi gọi lần đầu tiên
+
+- Cần thực hiện những slide effect phức tạp
 
 # So sánh Context và Redux
 
@@ -88,3 +197,10 @@
 
 
 --> Lưu ý: Có thể sử dụng kết hợp cả 2 trong 1 dự án
+
+
+# Bài tập
+
+- Cài đặt redux vào dự án
+
+- Chuyển đổi từ context sang redux cho chức năng authen
