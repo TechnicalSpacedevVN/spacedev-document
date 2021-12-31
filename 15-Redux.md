@@ -71,6 +71,8 @@
     import { createStore } from 'redux'
 
     const store = createStore()
+
+    export default store
 ```
 - Bước 3: Tạo reducer cho từng chức năng
 
@@ -191,7 +193,7 @@
 
     - Tạo nhiều store, nhưng redux sẽ gôm lại làm 1 duy nhất
 
-    - Không thể truyền function mà phải thông qua reducer
+    - Không thể truyền function mà phải thông qua dispatch
 
     - Setup khó, phù hợp với những ứng dụng lớn, state phức tạp, nhiều thành viên tham gia
 
@@ -199,8 +201,27 @@
 --> Lưu ý: Có thể sử dụng kết hợp cả 2 trong 1 dự án
 
 
+
+# Cài đặt redux devtool
+
+- Vào link và cài đặt extention redux devtool: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+
+- Config devtool vào redux
+
+```jsx
+    const reducer = combineReducers({
+        auth: authReducer
+    })
+
+    const store = createStore(
+        reducer,
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+```
+
 # Bài tập
 
 - Cài đặt redux vào dự án
 
 - Chuyển đổi từ context sang redux cho chức năng authen
+
+
