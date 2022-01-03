@@ -18,7 +18,7 @@
 
 - Được đánh giá là một trong những kiểu kiến trúc hỗ trợ tốt nhất với các thiết bị có lượng băng thông bị giới hạn như smartphone, tablet…
 
-# Giới thiệu về `fetch` gọi api từ phái BE
+# Giới thiệu về `fetch` gọi api từ phía BE
 
 - Javascript cung cấp hàm `fetch` với đầy đủ các tính năng để có thể thao tác với api từ phía BE cung cấp
 
@@ -29,11 +29,70 @@
 # Code demo
 
 - Lấy danh sách data từ api
+
+```jsx
+
+    const [posts ,setPosts] = useState()
+    useEffect(() => {
+        fetch('https://61cedbf665c32600170c7dd9.mockapi.io/posts')
+        .then(res => res.json())
+        .then(res => {
+            setPosts(res)
+        })
+    }, [])
+```
 - Lấy 1 data cụ thể
+```jsx
+    const [post ,setPost] = useState()
+    useEffect(() => {
+        fetch('https://61cedbf665c32600170c7dd9.mockapi.io/posts/1')
+        .then(res => res.json())
+        .then(res => {
+            setPost(res)
+        })
+    }, [])
+```
 - Thêm data
+```jsx
+    fetch('https://61cedbf665c32600170c7dd9.mockapi.io/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+            "title": `title ${id}`,
+            "content": `content ${id}`,
+            "short_description": `Short Description ${id}`,
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.json())
+    .then(res => {})
+```
 - Chỉnh sửa 1 data
+```jsx
+    fetch('https://61cedbf665c32600170c7dd9.mockapi.io/posts/1', {
+        method: 'PUT',
+        body: JSON.stringify({
+            "title": `title ${id}`,
+            "content": `content ${id}`,
+            "short_description": `Short Description ${id}`,
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.json())
+    .then(res => {})
+```
 - Delete data
 
+```jsx
+    fetch('https://61cedbf665c32600170c7dd9.mockapi.io/posts/1', {
+        method: 'DELETE',
+    })
+    .then(res => res.json())
+    .then(res => {})
+```
 # Bài tập
 
 - Gọi api lấy danh sách bài posts và render ra giao diện: GET
