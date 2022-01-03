@@ -195,8 +195,9 @@
 |----------|-----------
 | Làm authen | 30 phút
 | Làm refresh Token | 30 phút
-| Giới thiệu custom hook useQuery | 15 phút
 | Lấy thông tin sản phẩm | 15 phút
+| Giới thiệu custom hook useQuery | 15 phút
+
 
 
 # Ngày 13
