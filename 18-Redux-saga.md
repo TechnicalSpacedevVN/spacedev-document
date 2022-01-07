@@ -88,8 +88,12 @@
 
     - view cart
 
-2. Login get profile
+    GET_CART
 
-3. Login get cart
+2. Login get profile, get cart
 
-4. Logout clear cart
+    - B1: Login
+
+    - B2: Get profile, cart
+
+3. Logout clear cart
