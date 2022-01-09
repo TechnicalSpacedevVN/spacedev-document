@@ -214,7 +214,6 @@
                 for (let i = start; i <= end; i++) {
                     list.push(<Link
                         to={`${pathname}?${objectToUrlQuery({ page: i })}`}
-                        onClick={(ev) => dispatch({ type: 'PAGE', payload: i })}
                     >{i}</Link>)
                 }
                 return list
@@ -223,12 +222,12 @@
             return (
                 <div className="Paginate">
                     {
-                        parseInt(query.page) - 2 > 1 &&  <Link to={`${pathname}?${objectToUrlQuery({ page: query.page - 1 })}`} onClick={(ev) => dispatch({ type: 'PAGE', payload: query.page -  1})}>{'<'}</Link>
+                        parseInt(query.page) - 2 > 1 &&  <Link to={`${pathname}?${objectToUrlQuery({ page: query.page - 1 })}`} >{'<'}</Link>
                     }
                 
                     {renderItem()}
                     {
-                        parseInt(query.page) + 2 < totalPage && <Link to={`${pathname}?${objectToUrlQuery({ page: query.page + 1 })}`} onClick={(ev) => dispatch({ type: 'PAGE', payload: query.page +  1})}>{'>'}</Link>
+                        parseInt(query.page) + 2 < totalPage && <Link to={`${pathname}?${objectToUrlQuery({ page: query.page + 1 })}`} >{'>'}</Link>
                     }
 
                 </div>
