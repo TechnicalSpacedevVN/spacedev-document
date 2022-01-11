@@ -219,7 +219,16 @@
 | React.memo | 10 phút
 | Breadcrumbs | 15 phút
 
+
 # Ngày 15
+
+| Nội dung | Thời gian
+|----------|-----------
+| React.lazy | 30 phút
+| Skeleton | 30 phút
+| Review code | 30 phút
+
+# Ngày 16
 
 | Nội dung | Thời gian
 |----------|-----------
@@ -231,7 +240,7 @@
 
 (code demo cho từng bài tập)
 
-# Ngày 16
+# Ngày 17
 
 | Nội dung | Thời gian
 |----------|-----------
@@ -242,13 +251,6 @@
 | Filter sản phẩm | 15 phút
 
 
-# Ngày 17
-
-| Nội dung | Thời gian
-|----------|-----------
-| React.lazy | 30 phút
-| Skeleton | 30 phút
-| Review code | 30 phút
 # Ngày 18
 
 
@@ -257,7 +259,6 @@
 | routerConfig | 45 phút
 | redux toolkit | 45 phút
 | Review code | 30 phút
-
 
 
 

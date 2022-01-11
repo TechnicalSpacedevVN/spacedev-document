@@ -115,16 +115,16 @@
 
 ```jsx
 
-    import { useMemo, useState } from 'react'
+    import { useCallback, useState } from 'react'
 
     export const Count = () => {
         const [count, setCount] = useState(0)
         const [count2, setCount2] = useState(0)
 
-        const fibonaci = useMemo(() => {
+        const fibonaci = useCallback(() => {
             let n1 = 0, n2 = 1, nextTerm;
             let res = []
-            for (let i = 1; i <= number; i++) {
+            for (let i = 1; i <= count; i++) {
                 console.log(n1)
                 res.push(n1)
                 nextTerm = n1 + n2;
@@ -152,13 +152,111 @@
 - Lưu ý khi sử dụng: nếu state không được đưa vào dependencyList, thì giá trị state sử dụng trong hàm đó luôn luôn là giá trị cũ
 
 
+# useLayoutEffect
+
+
+
 # Bài tập
 
 
 - Làm các component sau trong dự án:
 
+    - Breadcrumbs
+
+    ```jsx
+        import React from "react"
+        import { Link } from "react-router-dom"
+        import './style.scss'
+
+        export const Breadcrumbs = ({ children }) => {
+
+            const len = React.Children.count(children)
+            return (
+                <div className="breadcrumbs">
+                    <ul>
+                        {
+                            React.Children.map(children, (child, index) => <li>{child}{index < len - 1 ? '>' : ''}</li>)
+                        }
+                    </ul>
+                </div>
+            )
+        }
+
+        export const BreadcrumbsItem = ({ children, to }) => {
+            return (
+                <Link to={to} className="item">{children}</Link>
+            )
+        }
+    ```
+
     - Paginate
 
-    - Breadcrumbs
+    ```jsx
+        import { useDispatch } from "react-redux"
+        import { Link, useLocation, useNavigate } from "react-router-dom"
+        import { urlQueryToObject, objectToUrlQuery } from "utils/urlQueryToObject"
+        import './style.scss'
+
+
+        const Paginate = ({ totalPage }) => {
+            const { pathname } = useLocation()
+            const navigate = useNavigate()
+            const dispatch = useDispatch()
+
+            const query = urlQueryToObject({ page: '1' })
+
+            query.page = parseInt(query.page)
+            const renderItem = () => {
+                let list = []
+                let start = parseInt(query.page) - 2
+                let end = parseInt(query.page) + 2
+
+                for (let i = start; i <= end; i++) {
+                    list.push(<Link
+                        to={`${pathname}?${objectToUrlQuery({ page: i })}`}
+                    >{i}</Link>)
+                }
+                return list
+            }
+            console.log(query.page)
+            return (
+                <div className="Paginate">
+                    {
+                        parseInt(query.page) - 2 > 1 &&  <Link to={`${pathname}?${objectToUrlQuery({ page: query.page - 1 })}`} >{'<'}</Link>
+                    }
+                
+                    {renderItem()}
+                    {
+                        parseInt(query.page) + 2 < totalPage && <Link to={`${pathname}?${objectToUrlQuery({ page: query.page + 1 })}`} >{'>'}</Link>
+                    }
+
+                </div>
+            )
+        }
+
+        export default Paginate
+    ```
+
+    ```jsx
+        // utils/urlQueryToObject
+        export function urlQueryToObject(defaultValues = {}) {
+            try {
+                var search = window.location.search.substring(1);
+                const obj = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}')
+                return {...defaultValues, ...obj}
+            } catch (err) {
+                return defaultValues
+            }
+        }
+
+        export const objectToUrlQuery = function (obj) {
+            var str = [];
+            for (var p in obj)
+                if (obj.hasOwnProperty(p)) {
+                    str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+                }
+            return str.join("&");
+        }
+    ```
     
     - Filter sản phẩm
