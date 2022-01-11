@@ -179,24 +179,22 @@
 
 |Nội dung | Thời gian
 |----------|-----------
-| Filter sản phẩm | 1 tiếng 30 phút
+| Redux | 1 tiếng 30 phút
 
 # Ngày 11
 
 |Nội dung | Thời gian
 |----------|-----------
-| Redux | 1 tiếng 30 phút 
-| REST API | 20 phút
+| Giới thiệu postman và các api | 30 phút
+| Lấy thông tin sản phẩm | 30 phút
 
 
 # Ngày 12
 
 | Nội dung | Thời gian
 |----------|-----------
-| Làm authen | 30 phút
+| Giới thiệu về jsonwebtoken (JWT) | 15 phút
 | Làm refresh Token | 30 phút
-| Lấy thông tin sản phẩm | 15 phút
-| Giới thiệu custom hook useQuery | 15 phút
 
 
 
@@ -219,9 +217,7 @@
 | useMemo | 10 phút
 | useCallback | 10 phút
 | React.memo | 10 phút
-| Paginate | 15 phút
 | Breadcrumbs | 15 phút
-| Filter sản phẩm | 15 phút
 
 # Ngày 15
 
@@ -230,8 +226,8 @@
 | Hướng dẫn làm trang checkout | 30 phút
 | My order | 15 phút
 | My order detail | 15 phút
-| Thông tin cá nhân | 15 phút
 | Wishlist | 15 phút
+| Thông tin cá nhân | 15 phút
 
 (code demo cho từng bài tập)
 
@@ -239,9 +235,11 @@
 
 | Nội dung | Thời gian
 |----------|-----------
-| Làm trang chủ | 30 phút
-| Làm trang chi tiết sản phẩm | 30 phút
-| Review code | 30 phút
+| Làm chức năng search | 30 phút
+| Làm trang chủ | 15 phút
+| Làm trang chi tiết sản phẩm | 15 phút
+| Paginate | 15 phút
+| Filter sản phẩm | 15 phút
 
 
 # Ngày 17
@@ -257,6 +255,7 @@
 | Nội dung | Thời gian
 |----------|-----------
 | routerConfig | 45 phút
+| redux toolkit | 45 phút
 | Review code | 30 phút
 
 
