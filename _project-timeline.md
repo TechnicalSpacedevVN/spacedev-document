@@ -267,6 +267,7 @@
 | Nội dung | Thời gian
 |----------|-----------
 | Giới thiệu cách làm CV xin việc | 30 phút
+| Xin việc trên các trang xin việc | 30 phút
 | Các câu hỏi thường gặp khi phỏng vấn | 1 tiếng 30 phút
 
 
