@@ -4,26 +4,26 @@
 
 | Nội dung | Thời gian|
 |----------|-----------|
-|Javascript nâng cao| 30 phút|
-|Cài đặt git| 15 phút|
-|Tạo dự án| 15 phút|
-|Cấu trúc thư mục| 10 phút|
+|Tạo dự án bằng vite| 5 phút|
+|Cấu trúc thư mục và giới thiệu từng thành phần| 10 phút|
 |Component| 15 phút|
-|Style| 15 phút|
+|Style| 30 phút|
+|Props| 15 phút|
 
 ## Trên lớp
 
-- Cài đặt git
-
 - Chia cây thư mục
 
-- Tập cắt 1 vài component trên trang home (Header top, Banner, Logo, Button)
+- Tạo component với các style, props đầy đủ: Button, Tab
+
+## Gửi clip:
+
+- Cài đặt và sử dụng git
+
+- Javascript nâng cao (1)
 
 ## Bài tập về nhà
 
-- Giải các bài tập javascript nâng cao
-
-- Phân chia và cắt component trang home
 
 <br>
 
@@ -31,9 +31,8 @@
 
 | Nội dung | Thời gian
 |----------|-----------
-|Javascript nâng cao| 30 phút
-|Props| 15 phút
-|Event| 15 phút
+| Event | 15 phút
+| Style | 30 phút
 
 
 ## Trên lớp
@@ -45,6 +44,10 @@
 - Giải các bài tập javascript nâng cao
 
 - Phân chia và cắt component trang home (Category menu, Product Card)
+
+## Gửi clip
+
+- Javascript nâng cao (2)
 
 <br>
 
