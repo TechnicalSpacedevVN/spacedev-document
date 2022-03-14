@@ -8,11 +8,8 @@
     - var, let: Biến có thể thay đổi
     - function: Function cũng là biến
 
-    ```javascript
-        const funcA = function() { }
-        function func() { }
-        const funcC = () => { }
-    ```
+- const, let giới hạn bởi dấu {} bao ngoài nó hoặc là toàn cục
+- Var giới hạn bởi dấu {} bao ngoài nhưng ko bao gồm for, white, if
 ## 2. const - let - var
 ### `const` - khai báo hằng số
 - Const không thể thay đổi trong quá trình thực thi. 
@@ -284,7 +281,7 @@
 - Trong chế độ `strict mode` con trỏ `this` khi sử dụng sẽ là `undefined`. Đối với chế độ bình thường `this` chính là `window`
 - Closure giúp quản lý code hiệu quả và ngắn gọn hơn, tăng khả năng sử dụng lại code
 ## Currying 
-- Currying là 1 function trả về 1 function, trong function đó lại trả tiếp 1 function khác (thường là 3 function liên tiếp, khác closure)
+- Currying là 1 function trả về 1 function, trong function đó lại trả tiếp 1 function khác
 
 - Có thể kết hợp cả closure và curring trong cùng 1 function
 

@@ -24,7 +24,6 @@
 
 ## Bài tập về nhà
 
-
 <br>
 
 # Ngày 2

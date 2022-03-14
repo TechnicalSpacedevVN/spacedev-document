@@ -19,16 +19,22 @@
 # Ngày 18
 
 
+
+- Button: icon, rounded, type
+- Input, Input.Group
+- Select
+
+
 - Tab
 - Switch
-- Input, Input.Group
-- Button: icon, rounded, type
+
+
 - Rating
 - Checkbox
 - Badge
 - Range
 - Form, Form.Item
-- Select
+
 - Menu, Menu.Item
 - Slider, Slider.Item
 - Breadcrumb, Breadcrumb.Item
