@@ -402,11 +402,13 @@
     // obj.a.a1 = 1 
 ```
 ## Promise, async/await
-- Promise là 1 object đặc biệt, 1 object Promise sẽ luôn luôn có `then` và `catch`
+- Promise là 1 object đặc biệt, 1 object Promise có `then`, `catch` và `finally`
 
 - Then xẩy ra khi gọi hàm `resolve`
 
 - catch xẩy ra khi gọi hàm `reject`
+
+- finally sẽ luôn luôn được thực thi sau cùng dù cho then hay cache
 
 - Dùng Promise để khử `callback hell` trong trường hợp cần thiết
 
@@ -490,7 +492,7 @@
     })
 
 ```
-- `async/await` là cú pháp để run Promise giống như code bình thường
+- `async/await` chúng ta xem nó như cú pháp dễ nhìn hơn của Promise giống như code bình thường
 
 - Code trong function có sử dụng `await` bắt buộc phải khai báo function `async`
 
