@@ -30,7 +30,7 @@
 
 - Ngày 5: Giới thiệu Context, làm quen concept của Context, Authentication
 
-- Ngày 6: Hoàn thành trang CFD
+- Ngày 6: Portal, Ref, hoàn thành trang CFD
 
 - Ngày 7: Giới thiệu Redux, làm quen với concept của redux, redux saga
 
