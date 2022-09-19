@@ -32,7 +32,7 @@
 
 - Ngày 6: Portal, Ref, hoàn thành trang CFD
 
-- Ngày 7: Giới thiệu Redux, làm quen với concept của redux, redux saga
+- Ngày 7: Giới thiệu Redux, làm quen với concept của redux, redux thunk
 
 - Ngày 8: 
 
