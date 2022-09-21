@@ -34,7 +34,7 @@
 
 - Ngày 7: Giới thiệu Redux, làm quen với concept của redux, redux thunk
 
-- Ngày 8: Tối ưu dự án với useMemo, memo, lazy, useCallback
+- Ngày 8: Tối ưu dự án với useReducer, useMemo, memo, lazy, useCallback
 
 - Ngày 9: Build và deploy dự án trên github, vercel
 
