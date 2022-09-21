@@ -36,7 +36,7 @@
 
 - Ngày 8: Tối ưu dự án với useMemmo, memo, lazy, useCallback
 
-- Ngày 9: Tối ưu dự án, build dự án và deploy
+- Ngày 9: Build và deploy dự án trên github, vercel
 
 ----------------------------
 
