@@ -40,9 +40,9 @@
 
 ----------------------------
 
-- Ngày 10: Bắt đầu dự án cuối khóa, chia component
+- Ngày 10: Giới thiệu dự án cuối khóa, setup dự án, project template, lấy thông tin sản phẩm, paginate
 
-- Ngày 11: Lấy thông tin sản phẩm, làm paginate, làm filter
+- Ngày 11: Làm filter
 
 - Ngày 12: Làm chức năng đăng nhập/đăng ký. Cập nhật thông tin cá nhân
 
