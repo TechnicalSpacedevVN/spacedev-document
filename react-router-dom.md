@@ -18,6 +18,20 @@
 
 - Bước 4: Sử dụng `Routes` để chọn 1 page duy nhất được render
 
+
+# Simple Page
+
+# Nested Page
+
+# 404 Page
+
+# Params URL
+
+# Query URL
+
+# Navigate
+
+
 # Ví dụ tổng hợp
 
 ```jsx
@@ -165,42 +179,3 @@
     }
 ```
 
-
-## Trên lớp 
-
-- chia router theo site map sau:
-
-    Home \
-    |\
-    About \
-    |\
-    Contact US \
-    |\
-    View Cart\
-    |\
-    Checkout\
-    |\
-    Checkout Success\
-    |\
-    Login\
-    |\
-    Register\
-    |\
-    Forgot password\
-    |\
-    Reset password\
-    |\
-    Profile\
-    |    |_My profile\
-    |    |_Order\
-    |    |_Order Detail\
-    |    |_Payment\
-    |    |_Payment detail\
-    |    |_Address\
-    |    |_Address detail
-
-## Về nhà
-
-- Chia router cho các trang của dự án
-
-- Cắt và hoàn thành trang chủ
