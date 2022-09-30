@@ -42,9 +42,9 @@
 
 - Ngày 10: Giới thiệu dự án cuối khóa, setup dự án, project template, lấy thông tin sản phẩm, paginate
 
-- Ngày 11: Làm chức năng đăng ký / đăng nhập, cập nhật thông tin cá nhân, refresh token
+- Ngày 11: Làm chức năng đăng ký / đăng nhập
 
-- Ngày 12: Làm chức năng tìm kiếm
+- Ngày 12: cập nhật thông tin cá nhân, refresh token, Làm chức năng tìm kiếm
 
 - Ngày 13: Chức năng cart
 
