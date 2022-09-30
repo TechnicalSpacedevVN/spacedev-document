@@ -46,7 +46,7 @@
 
 - Ngày 12: cập nhật thông tin cá nhân, refresh token, Làm chức năng tìm kiếm
 
-- Ngày 13: Chức năng cart
+- Ngày 13: Chức năng cart: Thêm sản phẩm vào giỏ hàng, tăng / giảm số lượng sản phẩm, xóa sản phẩm
 
 - Ngày 14: Checkout
 
