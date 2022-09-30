@@ -130,13 +130,20 @@
 - Tạo một form đăng ký với các field và rule sau đây:
 
 1. username: Băt buộc điền, là email
-2. Password: Bắt buộc điền, min: 6, max:32. Bao gồm ký tự số, viết hoa, đặc biệt, viết thường
-3. Confirm Passowd: điền giống password
-4. Name: Bắt buộc có 2 ký tự
-5. customer is: Select chọn lựa từ các option có sẵn, bắt buộc phải chọn gồm các option sau: IT, Designer, Devops, Other. Khi chọn Other phải thêm 1 text field ở dưới và bắt buộc điền
-6. age: Bắt buộc trên 18 tuổi
-7. Checkbox: đồng ý với các điều khoản (Bắt buộc)
-8. Button Click. Giả trạng thái loading. Khi bấm vào button thì set loading, 3s sau sẽ tắt
+
+3. Password: Bắt buộc điền, min: 6, max:32. Bao gồm ký tự số, viết hoa, đặc biệt, viết thường
+
+5. Confirm Passowd: điền giống password
+
+7. Name: Bắt buộc có 2 ký tự
+
+9. customer is: Select chọn lựa từ các option có sẵn, bắt buộc phải chọn gồm các option sau: IT, Designer, Devops, Other. Khi chọn Other phải thêm 1 text field ở dưới và bắt buộc điền
+
+11. age: Bắt buộc trên 18 tuổi
+
+13. Checkbox: đồng ý với các điều khoản (Bắt buộc)
+
+15. Button Click. Giả trạng thái loading. Khi bấm vào button thì set loading, 3s sau sẽ tắt
 
 
 # Bài tập về nhà
