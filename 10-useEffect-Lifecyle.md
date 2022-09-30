@@ -194,11 +194,3 @@ useEffect(() => {
 2. Bắt sự kiên scroll khi vào 1 component nào đó, hủy khi hủy component
 
 3. Thay đổi title khi click tăng biến count
-
-# Về nhà
-
-- Thay đổi title khi vào trang
-
-- Cắt các component Menu top, Search, header
-
-- Category, Product Card
