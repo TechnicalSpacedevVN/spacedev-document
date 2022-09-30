@@ -1,4 +1,4 @@
-# react-router-dom : Thư viện làm single page application
+# react-router-dom : Thư viện làm single page application (phiên bản hiện tại version 6)
 
 # React-router-dom là gì?
 
