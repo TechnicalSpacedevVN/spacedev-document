@@ -48,7 +48,7 @@
 
 - Ngày 13: Chức năng cart: Thêm sản phẩm vào giỏ hàng, tăng / giảm số lượng sản phẩm, xóa sản phẩm
 
-- Ngày 14: Hoàn thành những trang cá nhân
+- Ngày 14: Hoàn thành những trang cá nhân: wishlist, address, payment
 
 - Ngày 15: Checkout
 
