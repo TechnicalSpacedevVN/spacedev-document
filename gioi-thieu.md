@@ -50,7 +50,7 @@
 
 - Ngày 14: Hoàn thành những trang cá nhân: wishlist, address, payment
 
-- Ngày 15: Add Promotion, remove Promotion, Shipping method, Checkout
+- Ngày 15: Add Promotion, remove Promotion, Shipping method, Checkout, Order, Re-order
 
 - Ngày 16: Hoàn thành trang chủ, category
 
