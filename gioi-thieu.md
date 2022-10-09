@@ -26,9 +26,9 @@
 
 - Ngày 3: Làm SPA với react-router-dom
 
-- Ngày 4: Giới thiệu axios, Làm việc với api, lấy danh sách sản phẩm, custom hook
+- Ngày 4: Giới thiệu axios, Làm việc với api, lấy danh sách sản phẩm, custom hook: useQuery
 
-- Ngày 5: Giới thiệu Context, làm quen concept của Context, Authentication
+- Ngày 5: Giới thiệu Context, làm quen concept của Context, Authentication, useAsync
 
 - Ngày 6: Portal, Ref, hoàn thành trang CFD
 
@@ -36,7 +36,7 @@
 
 - Ngày 8: Tối ưu dự án với useReducer, useMemo, memo, lazy, useCallback, useLayoutEffect
 
-- Ngày 9: Build và deploy dự án trên github, vercel
+- Ngày 9: Build và deploy dự án trên vercel
 
 ----------------------------
 
@@ -50,10 +50,10 @@
 
 - Ngày 14: Hoàn thành những trang cá nhân: wishlist, address, payment
 
-- Ngày 15: Add Promotion, remove Promotion, Shipping method, Checkout, Order, Re-order
+- Ngày 15: Add Promotion, remove Promotion, Shipping method, Checkout
 
-- Ngày 16: Hoàn thành trang chủ, category
+- Ngày 16: Order, Re-order, Slider, Tab
 
-- Ngày 17: 
+- Ngày 17: Hoàn thành trang chủ, category
 
-- Ngày 18: , Hướng dẫn trả lời phỏng vấn xin việc
+- Ngày 18: Hướng dẫn trả lời phỏng vấn xin việc
