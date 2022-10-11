@@ -54,6 +54,6 @@
 
 - Ngày 16: Order, Re-order, Slider, Tab
 
-- Ngày 17: Hoàn thành trang chủ, category
+- Ngày 17: Multi currency, translate, category, trang chủ 
 
 - Ngày 18: Hướng dẫn trả lời phỏng vấn xin việc
