@@ -6,9 +6,9 @@
 
 # 3. Số dự án: 2
 
-- 1. CFD Course
+1. CFD Course
 
-- 2. Shop bán hàng
+2. Shop bán hàng
 
 # 4. Yêu cầu khóa học
 
