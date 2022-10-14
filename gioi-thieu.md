@@ -56,4 +56,4 @@
 
 - Ngày 17: Translate, category, sort product, trang chủ 
 
-- Ngày 18: Hướng dẫn trả lời phỏng vấn xin việc
+- Ngày 18: Hướng dẫn làm CV và trả lời phỏng vấn xin việc
