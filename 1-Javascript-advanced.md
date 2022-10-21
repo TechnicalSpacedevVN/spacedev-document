@@ -281,7 +281,7 @@
 - Trong chế độ `strict mode` con trỏ `this` khi sử dụng sẽ là `undefined`. Đối với chế độ bình thường `this` chính là `window`
 - Closure giúp quản lý code hiệu quả và ngắn gọn hơn, tăng khả năng sử dụng lại code
 ## Currying 
-- Currying là 1 function trả về 1 function, trong function đó lại trả tiếp 1 function khác
+- Currying là 1 function trả về 1 function
 
 - Có thể kết hợp cả closure và curring trong cùng 1 function
 
@@ -317,7 +317,8 @@
     console.log(dis10()) // - 10% = 900
     console.log(dis20()) // -20% = 720
 ```
- 
+- Currying thường được dùng để tạo ra nhiều function nhưng khác tham số, ví dụ discount10, discount20
+- Currying giúp viết code tối ưu và sử dụng lại mã code hiệu quả hơn
  
 ## Template string
 ```javascript
@@ -581,16 +582,3 @@
     - Deep copy
     - Shallow copy và update 1 attribute
     - Deep copy và update 1 attribute
-
-
-# Bài tập
-
-1. Làm chức năng countdown cho đồng hồ đếm ngược, có 2 đồng hồ trên cùng 1 giao diện, sử dụng closure\
---> Xem demo và bài giải ở [Baitap/ngay1/ngay1_closure.html](https://github.com/dangthuyenvuong/CFD-React-Document/blob/master/Baitap/ngay1/ngay1_closure.html)
-
-2. Làm chức năng tăng giảm số lượng sản phẩm\, có 2 box, mõi box có nút tăng/giảm số lượng. Box 2 có thêm các nút tăng 10, tăng 20, giãm 10, giãm 20\
---> Xem demo và bài giải ở [Baitap/ngay1/ngay1_currying.html](https://github.com/dangthuyenvuong/CFD-React-Document/blob/master/Baitap/ngay1/ngay1_currying.html)
-
-3. Làm theo đề bài ở file [Baitap/ngay1/ngay1_array.html](https://github.com/dangthuyenvuong/CFD-React-Document/blob/master/Baitap/ngay1/ngay1_array.html)
-4. Làm theo đề bài ở file [Baitap/ngay1/ngay1_destructuring.html](https://github.com/dangthuyenvuong/CFD-React-Document/blob/master/Baitap/ngay1/ngay1_destructuring.html)
-5. Làm theo đề bài ở file [Baitap/ngay1/ngay1_object.html](https://github.com/dangthuyenvuong/CFD-React-Document/blob/master/Baitap/ngay1/ngay1_object.html)
