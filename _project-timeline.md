@@ -1,3 +1,26 @@
+<style>
+   table {
+        margin-bottom: 30px;
+        margin-top: 10px;
+   }
+
+    table th {
+        background: #1746A2;
+        word-wrap: break-word;
+        color: white;
+    }
+        
+    table tr { 
+        background: white; 
+        color: black; 
+    }
+    table tr td:nth-child(2) {
+        text-align: left;
+    }
+    
+    table tr:hover { background: #DFF6FF; }
+</style>
+
 # Project Timeline
 
 # Ngày 1
