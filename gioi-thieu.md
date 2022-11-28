@@ -1,6 +1,6 @@
 # Giới thiệu
 
-# 1. Tên khóa học: Reactjs - Redux
+# 1. Tên khóa học: Reactjs Master
 
 # 2. Thời gian học: 18 buổi - 6 tuần
 
