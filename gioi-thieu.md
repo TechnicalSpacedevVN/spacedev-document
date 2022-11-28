@@ -4,6 +4,12 @@
 
 # 2. giới thiệu thành viên
 
+1. Đặng Thuyền Vương
+
+2. Lê Châu Hữu Thiện
+
+3. Nguyễn An
+
 # 3. Thời gian học: 18 buổi - 6 tuần
 
 # 4. Số dự án: 2
