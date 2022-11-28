@@ -2,15 +2,17 @@
 
 # 1. Tên khóa học: Reactjs Master
 
-# 2. Thời gian học: 18 buổi - 6 tuần
+# 2. giới thiệu thành viên
 
-# 3. Số dự án: 2
+# 3. Thời gian học: 18 buổi - 6 tuần
+
+# 4. Số dự án: 2
 
 1. CFD Course
 
 2. Shop bán hàng
 
-# 4. Yêu cầu khóa học
+# 5. Yêu cầu khóa học
 
 - Có kiến thức cơ bản về javascript: Function, biến, câu điều kiện, vòng lặp, .....
 
@@ -18,7 +20,7 @@
 
 - Chịu khó, hỏi giảng viên, mentor khi gặp khó khi tiếp thu kiến thức
 
-# Lịch trình
+# 6. Lịch trình
 
 - Ngày 1: Cài đặt dự án, cấu trúc folder. Làm quen với Reactjs Component, props, state, style, useEffect
 
