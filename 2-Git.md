@@ -86,11 +86,11 @@ vd: `git remote add origin https://github.com/dangthuyenvuong/cfd-template`
 --> Khi code xong 1 chức năng nào đó, chúng ta có nhu cầu update sự thay đổi đó vào Local Repo:
 
 - **B1**: Kiểm tra trạng thái của những file có thay đổi: 
-- 
+
 `git status`
 
 - **B2**: Thêm tất cả những file có thay đổi vào hàng đợi: 
-- 
+
 `git add .`
 
 
