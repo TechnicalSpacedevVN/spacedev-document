@@ -41,6 +41,8 @@ _ Ngoài ra các yêu cầu trong dự án thường thay đổi thường xuyê
 * Push: Đẩy code từ máy cá nhân lên Remote Repo.
 
 * Pull: Lấy code từ Remote repo xuống máy cá nhân.
+
+* Clone: Lấy nguyên source code từ remote repo về local repo
 <br />
 <br />
 
@@ -67,6 +69,8 @@ Truy cập vào folder dự án, chạy lệnh `git init`\
 
 --> Khi làm việc nhóm, và code được lưu trữ trên internet thông qua một Repo. Thì chúng ta phải thêm Repo đó vào dự án code hiện tại.\
 vd: `git remote add origin https://github.com/dangthuyenvuong/cfd-template`
+
+-- `origin` tên của repo chúng ta tự đặt, nhưng thường sẽ có một repo chính tên là `origin`
 
 --> Kiểm tra repo đang được remote\
 `git remote -v`
@@ -98,7 +102,7 @@ vd: `git remote add origin https://github.com/dangthuyenvuong/cfd-template`
 --> Các cách chia branch:
 1. Mõi lập trình viên lập trình trên mõi branch khác nhau
 2. Mõi chức năng mới sẽ lập trình trên mõi branch khác nhau
-3. Sẽ luôn luôn có 1 branch làm branch chính (mặc định master)
+3. Sẽ luôn luôn có 1 branch làm branch chính (có thể là `master` hoặc `main`)
 <br />
 <br />
 
