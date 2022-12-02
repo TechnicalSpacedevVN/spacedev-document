@@ -56,7 +56,8 @@ Truy cập link và tạo 1 Repository để lưu trữ code dự án: https://g
 <br />
 
 ## 2. Cài đặt git cho code local: 
-Truy cập vào folder dự án, chạy lệnh `git init`\
+Truy cập vào folder dự án, chạy lệnh `git init`
+
 
 --> Tạo Local Repo trên dự án, một tập tin ẩn `.git` sẽ được thêm vào mã nguồn của code. Kể từ lúc này, mọi thay đổi trên  code sẽ được theo dỗi và ghi vào tập folder `.git`
 
@@ -65,15 +66,18 @@ Truy cập vào folder dự án, chạy lệnh `git init`\
 <br />
 
 ## 3. Thêm Remote Repo cho dự án: 
-`git remote add [repo-name] [link-repo]`\
+`git remote add [repo-name] [link-repo]`
+
 
 --> Khi làm việc nhóm, và code được lưu trữ trên internet thông qua một Repo. Thì chúng ta phải thêm Repo đó vào dự án code hiện tại.\
 vd: `git remote add origin https://github.com/dangthuyenvuong/cfd-template`
 
 -- `origin` tên của repo chúng ta tự đặt, nhưng thường sẽ có một repo chính tên là `origin`
 
---> Kiểm tra repo đang được remote\
+--> Kiểm tra repo đang được remote
+
 `git remote -v`
+
 <br />
 <br />
 
@@ -81,22 +85,29 @@ vd: `git remote add origin https://github.com/dangthuyenvuong/cfd-template`
 ## 4. Commit code
 --> Khi code xong 1 chức năng nào đó, chúng ta có nhu cầu update sự thay đổi đó vào Local Repo:
 
-- **B1**: Kiểm tra trạng thái của những file có thay đổi: \
+- **B1**: Kiểm tra trạng thái của những file có thay đổi: 
+- 
 `git status`
 
-- **B2**: Thêm tất cả những file có thay đổi vào hàng đợi: \
-`git add .`\
+- **B2**: Thêm tất cả những file có thay đổi vào hàng đợi: 
+- 
+`git add .`
 
-  --> Trong trường hợp muốn thêm cụ thể 1 file nào đó: `git add [tên file]`\
-- **B3**: Đưa code vào trong git: \
+
+  --> Trong trường hợp muốn thêm cụ thể 1 file nào đó: `git add [tên file]`
+  
+- **B3**: Đưa code vào trong git: 
+
 `git commit -m "[comment]"`
 
 <br />
 <br />
 
 ## 5. Tạo branch cho git
-`git branch [branch-name]`\
-`git checkout [branch-name]`\
+`git branch [branch-name]`
+
+`git checkout [branch-name]`
+
 --> Branch là những nhánh của code, mõi git sẽ có nhiều branch. Tùy thuộc vào cách chia branch của leader mà mình có thể tạo nhiều branch với những tên khác nhau. Từ khi checkout branch mới, mọi code được commit sẽ được lưu ở branch đang checkout \
 <br />
 --> Các cách chia branch:
