@@ -38,13 +38,13 @@
 
 - Ngày 5: Giới thiệu Context, làm quen concept của Context, Authentication, useAsync
 
-- Ngày 6: Portal, Ref, hoàn thành trang CFD
+- Ngày 6: Portal, Ref và cài đặt thư viện UI không có trong React
 
-- Ngày 7: Giới thiệu Redux, làm quen với concept của redux, redux thunk
+- Ngày 7: Hoàn thành website bán khóa học
 
-- Ngày 8: Tối ưu dự án với useReducer, useMemo, memo, lazy, useCallback, useLayoutEffect
+- Ngày 8: Tối ưu và deploy dự án
 
-- Ngày 9: Build và deploy dự án trên vercel
+- Ngày 9: Redux và nhũng thư viện liên quan
 
 ----------------------------
 
