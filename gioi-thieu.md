@@ -50,13 +50,13 @@
 
 - Ngày 10: Giới thiệu dự án cuối khóa, setup dự án, project template, lấy thông tin sản phẩm, paginate
 
-- Ngày 11: Làm chức năng đăng ký / đăng nhập
+- Ngày 11: Đăng ký / đăng nhập, refresh token, cập nhật thông tin cá nhân
 
-- Ngày 12: cập nhật thông tin cá nhân, refresh token, Làm chức năng tìm kiếm
+- Ngày 12: Cập nhật thông tin cá nhân, refresh token, wishlist, address, payment
 
 - Ngày 13: Chức năng cart: Thêm sản phẩm vào giỏ hàng, tăng / giảm số lượng sản phẩm, xóa sản phẩm
 
-- Ngày 14: Hoàn thành những trang cá nhân: wishlist, address, payment
+- Ngày 14: Hoàn thành trang chi tiết sản phẩm
 
 - Ngày 15: Add Promotion, remove Promotion, Shipping method, Checkout
 
