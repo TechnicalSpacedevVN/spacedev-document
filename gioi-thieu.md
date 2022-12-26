@@ -52,7 +52,7 @@
 
 - Ngày 11: Đăng ký / đăng nhập, refresh token, cập nhật thông tin cá nhân
 
-- Ngày 12: Cập nhật thông tin cá nhân, refresh token, wishlist, address, payment
+- Ngày 12: Search, sort, categories
 
 - Ngày 13: Chức năng cart: Thêm sản phẩm vào giỏ hàng, tăng / giảm số lượng sản phẩm, xóa sản phẩm
 
