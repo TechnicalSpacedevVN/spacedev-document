@@ -17,3 +17,5 @@
 - [ ] Mỗi lần tăng số lượng cartItem bị loading
 
 - [ ] Thay loading icon cho toàn bộ Spin
+
+- [ ] Fix bug lỗi sai format trong DatePicker trang thay đổi thông tin cá nhân
