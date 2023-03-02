@@ -19,3 +19,7 @@
 - [ ] Thay loading icon cho toàn bộ Spin
 
 - [ ] Fix bug lỗi sai format trong DatePicker trang thay đổi thông tin cá nhân
+
+- [ ] Bị gọi lại danh sách category khi chuyển page trong wishlist
+
+- [ ] Đặt nhầm tên folder component/Checkout -> Checkbox
