@@ -8,6 +8,8 @@
 
 - [ ] Làm skeleton loading cho trang product detail
 
+- [ ] Cho phép chuyển image cover trong trang detail
+
 - [ ] Code spliting cho toàn bộ ứng dụng
 
 - [ ] Thêm discount ở product image
@@ -23,3 +25,7 @@
 - [ ] Bị gọi lại danh sách category khi chuyển page trong wishlist
 
 - [ ] Đặt nhầm tên folder component/Checkout -> Checkbox
+
+- [ ] Delay cho pre-checkout
+
+- [ ] Order completed sử dung return Navigate thay cho useEffect
