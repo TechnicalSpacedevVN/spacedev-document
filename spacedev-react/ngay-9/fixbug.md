@@ -5,3 +5,5 @@
 - [ ] Trang thông tin tài khoản
 
 - [ ] Trang khóa học của tôi
+
+- [ ] Gọi thông tin user khi mới vào website
