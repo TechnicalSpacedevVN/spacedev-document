@@ -378,7 +378,7 @@
     // obj.a.a1 = 100 
 ```
 
-- Deep copying: (Copy xâu)
+- Deep copying: (Copy sâu)
 
     - Tạo ra 1 bản copy hoàn toàn mới
     
@@ -409,7 +409,7 @@
 
 - catch xẩy ra khi gọi hàm `reject`
 
-- finally sẽ luôn luôn được thực thi sau cùng dù cho then hay cache
+- finally sẽ luôn luôn được thực thi sau cùng dù cho then hay catch
 
 - Dùng Promise để khử `callback hell` trong trường hợp cần thiết
 
@@ -550,20 +550,20 @@
 # Thao tác xử lý logic với các bài toán thông dụng
 ## Thao tác với Array
 - Các hàm thao tác với Array:
-    - find
-    - findIndex
-    - filter
-    - map
-    - forEach
-    - push
-    - pop
-    - shift
-    - unshift
-    - some
-    - every
-    - sort
-    - concat
-    - reduce
+    - find: tìm phần tử, trả ra phần tử tìm thấy, không tìm thấy sẽ là null
+    - findIndex: tìm phần tử, trả ra vị trí của phần tử, không tìm thấy sẽ là -1
+    - filter: Chỉ lấy ra những phần tử đạt điều kiện
+    - map: loop qua các phần tử và tạo ra một array mới, item trong array sẽ do callback return về
+    - forEach: loop qua các item
+    - push: Thêm cuối
+    - pop: Xóa cuối
+    - shift: Xóa đầu
+    - unshift: Thêm đầu
+    - some: Kiểm tra xem ít nhất 1 phần tử có đạt điều kiện
+    - every: Kiểm tra tất cả các phần tử phải đạt điều kiện
+    - sort: Sắp xếp trên chính array gốc
+    - concat: Thêm, cộng array vào cuối
+    - reduce: Duyệt qua các phần tử và có kèm theo 1 biến tính toán
 - Các thao tác:
     - Thêm cuối, lây cuối, thêm đầu, lấy đầu
     - filter những item theo điều kiện nào đó
